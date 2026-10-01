@@ -1,0 +1,85 @@
+=== Controlador SDN Didático v2 (OpenFlow 1.0 / Hub) ===
+Iniciando servidor socket TCP em 0.0.0.0:6653...
+Aguardando conexões dos switches (porta 6653)...
+
+[18:13:49.921] [+] Conexão TCP estabelecida com o switch: 127.0.0.1:52854
+[18:13:49.921]     <<< HELLO de 127.0.0.1:52854 (xid=324)
+[18:13:49.921]     >>> FEATURES_REQUEST para 127.0.0.1:52854
+[18:13:50.423]     <<< FEATURES_REPLY: DPID=0000000000000001 buffers=0 tabelas=254 portas=3 (501.34 ms)
+[18:13:50.423] [OK] Handshake concluído com DPID 1 (1 switch(es) conectado(s))
+[18:13:50.423] [+] Conexão TCP estabelecida com o switch: 127.0.0.1:52864
+[18:13:50.423]     <<< HELLO de 127.0.0.1:52864 (xid=325)
+[18:13:50.423]     >>> FEATURES_REQUEST para 127.0.0.1:52864
+[18:13:50.924]     <<< FEATURES_REPLY: DPID=0000000000000006 buffers=0 tabelas=254 portas=4 (501.45 ms)
+[18:13:50.924] [OK] Handshake concluído com DPID 6 (2 switch(es) conectado(s))
+[18:13:50.924] [STATS] switches=2 packet_in/s=0 msgs/s=0
+[18:13:50.924] [+] Conexão TCP estabelecida com o switch: 127.0.0.1:52872
+[18:13:50.924]     <<< HELLO de 127.0.0.1:52872 (xid=326)
+[18:13:50.924] [ERRO] Handshake falhou com ('127.0.0.1', 52872): [Errno 32] Broken pipe
+[18:13:50.925] [+] Conexão TCP estabelecida com o switch: 127.0.0.1:52888
+[18:13:50.925]     <<< HELLO de 127.0.0.1:52888 (xid=327)
+[18:13:50.925] [ERRO] Handshake falhou com ('127.0.0.1', 52888): [Errno 32] Broken pipe
+[18:13:50.925] [+] Conexão TCP estabelecida com o switch: 127.0.0.1:52900
+[18:13:50.925]     <<< HELLO de 127.0.0.1:52900 (xid=328)
+[18:13:50.925] [ERRO] Handshake falhou com ('127.0.0.1', 52900): [Errno 32] Broken pipe
+[18:13:50.925] [+] Conexão TCP estabelecida com o switch: 127.0.0.1:52902
+[18:13:50.925]     <<< HELLO de 127.0.0.1:52902 (xid=329)
+[18:13:50.925] [ERRO] Handshake falhou com ('127.0.0.1', 52902): [Errno 32] Broken pipe
+[18:13:51.925] [STATS] switches=2 packet_in/s=0 msgs/s=0
+[18:13:51.925] [+] Conexão TCP estabelecida com o switch: 127.0.0.1:52932
+[18:13:51.925]     <<< HELLO de 127.0.0.1:52932 (xid=330)
+[18:13:51.925]     >>> FEATURES_REQUEST para 127.0.0.1:52932
+[18:13:52.426]     <<< FEATURES_REPLY: DPID=0000000000000003 buffers=0 tabelas=254 portas=4 (501.15 ms)
+[18:13:52.426] [OK] Handshake concluído com DPID 3 (3 switch(es) conectado(s))
+[18:13:52.426] [+] Conexão TCP estabelecida com o switch: 127.0.0.1:52938
+[18:13:52.426]     <<< HELLO de 127.0.0.1:52938 (xid=331)
+[18:13:52.426]     >>> FEATURES_REQUEST para 127.0.0.1:52938
+[18:13:52.926]     <<< FEATURES_REPLY: DPID=0000000000000002 buffers=0 tabelas=254 portas=4 (500.03 ms)
+[18:13:52.926] [OK] Handshake concluído com DPID 2 (4 switch(es) conectado(s))
+[18:13:52.926] [STATS] switches=4 packet_in/s=0 msgs/s=0
+[18:13:52.926] [+] Conexão TCP estabelecida com o switch: 127.0.0.1:52944
+[18:13:52.926]     <<< HELLO de 127.0.0.1:52944 (xid=332)
+[18:13:52.926] [ERRO] Handshake falhou com ('127.0.0.1', 52944): [Errno 32] Broken pipe
+[18:13:52.927] [+] Conexão TCP estabelecida com o switch: 127.0.0.1:52952
+[18:13:52.927]     <<< HELLO de 127.0.0.1:52952 (xid=333)
+[18:13:52.927] [ERRO] Handshake falhou com ('127.0.0.1', 52952): [Errno 32] Broken pipe
+[18:13:52.927] [+] Conexão TCP estabelecida com o switch: 127.0.0.1:52962
+[18:13:52.927]     <<< HELLO de 127.0.0.1:52962 (xid=334)
+[18:13:52.927] [ERRO] Handshake falhou com ('127.0.0.1', 52962): [Errno 32] Broken pipe
+[18:13:52.927] [+] Conexão TCP estabelecida com o switch: 127.0.0.1:52974
+[18:13:52.927]     <<< HELLO de 127.0.0.1:52974 (xid=335)
+[18:13:52.927] [ERRO] Handshake falhou com ('127.0.0.1', 52974): [Errno 32] Broken pipe
+[18:13:53.926] [STATS] switches=4 packet_in/s=0 msgs/s=0
+[18:13:54.927] [STATS] switches=4 packet_in/s=0 msgs/s=0
+[18:13:54.930] [+] Conexão TCP estabelecida com o switch: 127.0.0.1:36288
+[18:13:54.930]     <<< HELLO de 127.0.0.1:36288 (xid=336)
+[18:13:54.930]     >>> FEATURES_REQUEST para 127.0.0.1:36288
+[18:13:55.423]     <<< FEATURES_REPLY: DPID=0000000000000008 buffers=0 tabelas=254 portas=3 (492.96 ms)
+[18:13:55.423] [OK] Handshake concluído com DPID 8 (5 switch(es) conectado(s))
+[18:13:55.423] [+] Conexão TCP estabelecida com o switch: 127.0.0.1:36290
+[18:13:55.423]     <<< HELLO de 127.0.0.1:36290 (xid=337)
+[18:13:55.423]     >>> FEATURES_REQUEST para 127.0.0.1:36290
+[18:13:55.423]     <<< FEATURES_REPLY: DPID=0000000000000007 buffers=0 tabelas=254 portas=4 (0.35 ms)
+[18:13:55.423] [OK] Handshake concluído com DPID 7 (6 switch(es) conectado(s))
+[18:13:55.423] [+] Conexão TCP estabelecida com o switch: 127.0.0.1:36304
+[18:13:55.423]     <<< HELLO de 127.0.0.1:36304 (xid=338)
+[18:13:55.423]     >>> FEATURES_REQUEST para 127.0.0.1:36304
+[18:13:55.429]     <<< FEATURES_REPLY: DPID=0000000000000004 buffers=0 tabelas=254 portas=4 (5.22 ms)
+[18:13:55.429] [OK] Handshake concluído com DPID 4 (7 switch(es) conectado(s))
+[18:13:55.429] [+] Conexão TCP estabelecida com o switch: 127.0.0.1:36310
+[18:13:55.429]     <<< HELLO de 127.0.0.1:36310 (xid=339)
+[18:13:55.429]     >>> FEATURES_REQUEST para 127.0.0.1:36310
+[18:13:55.925]     <<< FEATURES_REPLY: DPID=0000000000000005 buffers=0 tabelas=254 portas=4 (496.11 ms)
+[18:13:55.925] [OK] Handshake concluído com DPID 5 (8 switch(es) conectado(s))
+[18:13:55.928] [STATS] switches=8 packet_in/s=0 msgs/s=2
+[18:13:56.928] [STATS] switches=8 packet_in/s=0 msgs/s=0
+[18:13:57.928] [STATS] switches=8 packet_in/s=0 msgs/s=1
+[18:13:58.928] [STATS] switches=8 packet_in/s=0 msgs/s=1
+[18:13:59.343] [-] Switch DPID 1 desconectado: Conexão encerrada pelo switch.
+[18:13:59.343] [-] Switch DPID 6 desconectado: Conexão encerrada pelo switch.
+[18:13:59.343] [-] Switch DPID 3 desconectado: Conexão encerrada pelo switch.
+[18:13:59.343] [-] Switch DPID 2 desconectado: Conexão encerrada pelo switch.
+[18:13:59.343] [-] Switch DPID 8 desconectado: Conexão encerrada pelo switch.
+[18:13:59.343] [-] Switch DPID 7 desconectado: Conexão encerrada pelo switch.
+[18:13:59.343] [-] Switch DPID 4 desconectado: Conexão encerrada pelo switch.
+[18:13:59.343] [-] Switch DPID 5 desconectado: Conexão encerrada pelo switch.

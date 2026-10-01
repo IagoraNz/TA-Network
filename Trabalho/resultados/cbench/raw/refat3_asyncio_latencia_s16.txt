@@ -1,0 +1,22 @@
+$ cbench -c 127.0.0.1 -p 6653 -m 10000 -l 10 -s 16
+17:52:29.128 16  switches: flows/sec:  9764  9764  9764  9764  9764  9764  9764  9764  9764  9764  9764  9764  9763  9763  9763  9763   total = 15.621995 per ms 
+17:52:39.228 16  switches: flows/sec:  11025  11020  11016  11013  11010  11010  11008  11004  11002  11001  11000  11000  11000  11000  10999  10999   total = 17.610696 per ms 
+17:52:49.328 16  switches: flows/sec:  12398  12391  12389  12385  12383  12380  12380  12379  12379  12377  12374  12371  12369  12367  12366  12366   total = 19.805396 per ms 
+17:52:59.429 16  switches: flows/sec:  13646  13635  13628  13620  13619  13618  13609  13602  13601  13603  13601  13600  13599  13596  13595  13588   total = 21.775998 per ms 
+17:53:09.529 16  switches: flows/sec:  13807  13799  13796  13792  13786  13785  13783  13781  13782  13775  13773  13771  13768  13768  13767  13766   total = 22.049896 per ms 
+17:53:19.629 16  switches: flows/sec:  13552  13551  13548  13545  13543  13543  13541  13538  13538  13537  13537  13537  13536  13536  13535  13536   total = 21.665298 per ms 
+17:53:29.730 16  switches: flows/sec:  14087  14079  14074  14071  14067  14067  14064  14063  14064  14060  14057  14057  14056  14056  14056  14055   total = 22.503298 per ms 
+17:53:39.830 16  switches: flows/sec:  13641  13635  13632  13626  13625  13624  13623  13619  13619  13616  13615  13613  13611  13611  13611  13609   total = 21.792996 per ms 
+17:53:49.930 16  switches: flows/sec:  13427  13417  13415  13412  13409  13409  13409  13408  13407  13405  13399  13397  13396  13396  13395  13395   total = 21.449598 per ms 
+17:54:00.031 16  switches: flows/sec:  13678  13674  13671  13669  13663  13663  13665  13661  13661  13659  13659  13657  13656  13655  13653  13653   total = 21.859698 per ms 
+RESULT: 16 switches 9 tests min/max/avg/stdev = 17610.70/22503.30/21168.10/1439.03 responses/s
+cbench: controller benchmarking tool
+   running in mode 'latency'
+   connecting to controller at 127.0.0.1:6653 
+   faking 16 switches offset 1 :: 10 tests each; 10000 ms per test
+   with 100000 unique source MACs per switch
+   learning destination mac addresses before the test
+   starting test with 0 ms delay after features_reply
+   ignoring first 1 "warmup" and last 0 "cooldown" loops
+   connection delay of 0ms per 1 switch(es)
+   debugging info is off

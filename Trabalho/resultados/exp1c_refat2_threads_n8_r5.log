@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/home/iagora/TA-Network/Trabalho/refatoracoes/Controlador-v3-threads.py", line 67, in <module>
+    main()
+    ~~~~^^
+  File "/home/iagora/TA-Network/Trabalho/refatoracoes/Controlador-v3-threads.py", line 57, in main
+    srv.bind((HOST, PORT))
+    ~~~~~~~~^^^^^^^^^^^^^^
+OSError: [Errno 98] Address already in use

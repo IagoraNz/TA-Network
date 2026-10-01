@@ -1,0 +1,14 @@
+=== Controlador SDN Didático v2 (OpenFlow 1.0 / Hub) ===
+Iniciando servidor socket TCP em 0.0.0.0:6653...
+Aguardando conexões dos switches (porta 6653)...
+
+[18:06:31.491] [+] Conexão TCP estabelecida com o switch: 127.0.0.1:40100
+[18:06:31.491]     <<< HELLO de 127.0.0.1:40100 (xid=5)
+[18:06:31.491]     >>> FEATURES_REQUEST para 127.0.0.1:40100
+[18:06:31.991]     <<< FEATURES_REPLY: DPID=0000000000000001 buffers=0 tabelas=254 portas=2 (500.36 ms)
+[18:06:31.991] [OK] Handshake concluído com DPID 1 (1 switch(es) conectado(s))
+[18:06:32.432] [STATS] switches=1 packet_in/s=0 msgs/s=0
+[18:06:33.433] [STATS] switches=1 packet_in/s=0 msgs/s=0
+[18:06:34.433] [STATS] switches=1 packet_in/s=0 msgs/s=0
+[18:06:35.434] [STATS] switches=1 packet_in/s=0 msgs/s=0
+[18:06:35.974] [-] Switch DPID 1 desconectado: Conexão encerrada pelo switch.

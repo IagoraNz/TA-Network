@@ -1,0 +1,38 @@
+=== Controlador SDN Didático v2 (OpenFlow 1.0 / Hub) ===
+Iniciando servidor socket TCP em 0.0.0.0:6653...
+Aguardando conexões dos switches (porta 6653)...
+
+[18:09:51.560] [+] Conexão TCP estabelecida com o switch: 127.0.0.1:54260
+[18:09:51.560]     <<< HELLO de 127.0.0.1:54260 (xid=77)
+[18:09:51.560]     >>> FEATURES_REQUEST para 127.0.0.1:54260
+[18:09:52.060]     <<< FEATURES_REPLY: DPID=0000000000000004 buffers=0 tabelas=254 portas=3 (500.38 ms)
+[18:09:52.060] [OK] Handshake concluído com DPID 4 (1 switch(es) conectado(s))
+[18:09:52.060] [+] Conexão TCP estabelecida com o switch: 127.0.0.1:54266
+[18:09:52.060]     <<< HELLO de 127.0.0.1:54266 (xid=78)
+[18:09:52.060]     >>> FEATURES_REQUEST para 127.0.0.1:54266
+[18:09:52.561]     <<< FEATURES_REPLY: DPID=0000000000000001 buffers=0 tabelas=254 portas=3 (500.35 ms)
+[18:09:52.561] [OK] Handshake concluído com DPID 1 (2 switch(es) conectado(s))
+[18:09:52.561] [STATS] switches=2 packet_in/s=0 msgs/s=0
+[18:09:52.561] [+] Conexão TCP estabelecida com o switch: 127.0.0.1:54278
+[18:09:52.561]     <<< HELLO de 127.0.0.1:54278 (xid=79)
+[18:09:52.561] [ERRO] Handshake falhou com ('127.0.0.1', 54278): [Errno 32] Broken pipe
+[18:09:52.561] [+] Conexão TCP estabelecida com o switch: 127.0.0.1:54292
+[18:09:52.561]     <<< HELLO de 127.0.0.1:54292 (xid=80)
+[18:09:52.561] [ERRO] Handshake falhou com ('127.0.0.1', 54292): [Errno 32] Broken pipe
+[18:09:53.561] [STATS] switches=2 packet_in/s=0 msgs/s=0
+[18:09:53.562] [+] Conexão TCP estabelecida com o switch: 127.0.0.1:54302
+[18:09:53.562]     <<< HELLO de 127.0.0.1:54302 (xid=81)
+[18:09:53.562]     >>> FEATURES_REQUEST para 127.0.0.1:54302
+[18:09:54.063]     <<< FEATURES_REPLY: DPID=0000000000000003 buffers=0 tabelas=254 portas=4 (500.25 ms)
+[18:09:54.063] [OK] Handshake concluído com DPID 3 (3 switch(es) conectado(s))
+[18:09:54.063] [+] Conexão TCP estabelecida com o switch: 127.0.0.1:54314
+[18:09:54.063]     <<< HELLO de 127.0.0.1:54314 (xid=82)
+[18:09:54.063]     >>> FEATURES_REQUEST para 127.0.0.1:54314
+[18:09:54.563]     <<< FEATURES_REPLY: DPID=0000000000000002 buffers=0 tabelas=254 portas=4 (500.42 ms)
+[18:09:54.563] [OK] Handshake concluído com DPID 2 (4 switch(es) conectado(s))
+[18:09:54.563] [STATS] switches=4 packet_in/s=0 msgs/s=0
+[18:09:55.564] [STATS] switches=4 packet_in/s=0 msgs/s=0
+[18:09:55.981] [-] Switch DPID 4 desconectado: Conexão encerrada pelo switch.
+[18:09:55.981] [-] Switch DPID 1 desconectado: Conexão encerrada pelo switch.
+[18:09:55.981] [-] Switch DPID 3 desconectado: Conexão encerrada pelo switch.
+[18:09:55.981] [-] Switch DPID 2 desconectado: Conexão encerrada pelo switch.

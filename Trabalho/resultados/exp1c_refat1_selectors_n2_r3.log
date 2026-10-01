@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/home/iagora/TA-Network/Trabalho/refatoracoes/Controlador-v3-selectors.py", line 99, in <module>
+    main()
+    ~~~~^^
+  File "/home/iagora/TA-Network/Trabalho/refatoracoes/Controlador-v3-selectors.py", line 38, in main
+    srv.bind((HOST, PORT))
+    ~~~~~~~~^^^^^^^^^^^^^^
+OSError: [Errno 98] Address already in use

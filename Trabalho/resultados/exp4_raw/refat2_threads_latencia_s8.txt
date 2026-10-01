@@ -1,0 +1,18 @@
+$ cbench -c 127.0.0.1 -p 6653 -m 5000 -l 6 -s 8
+16:35:48.658 8   switches: flows/sec:  6427  6504  6547  6527  6515  6512  6482  6468   total = 10.396398 per ms 
+16:35:53.758 8   switches: flows/sec:  6381  6349  6330  6375  6364  6415  6288  6342   total = 10.168609 per ms 
+16:35:58.859 8   switches: flows/sec:  5980  6103  5974  6001  6080  6118  6112  6043   total = 9.682198 per ms 
+16:36:03.959 8   switches: flows/sec:  5748  5769  5697  5760  5763  5845  5744  5872   total = 9.239596 per ms 
+16:36:09.059 8   switches: flows/sec:  5387  5444  5455  5442  5443  5391  5423  5426   total = 8.682198 per ms 
+16:36:14.160 8   switches: flows/sec:  5255  5255  5221  5319  5280  5212  5339  5252   total = 8.426598 per ms 
+RESULT: 8 switches 5 tests min/max/avg/stdev = 8426.60/10168.61/9239.84/637.28 responses/s
+cbench: controller benchmarking tool
+   running in mode 'latency'
+   connecting to controller at 127.0.0.1:6653 
+   faking 8 switches offset 1 :: 6 tests each; 5000 ms per test
+   with 100000 unique source MACs per switch
+   learning destination mac addresses before the test
+   starting test with 0 ms delay after features_reply
+   ignoring first 1 "warmup" and last 0 "cooldown" loops
+   connection delay of 0ms per 1 switch(es)
+   debugging info is off

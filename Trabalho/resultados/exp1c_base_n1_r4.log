@@ -1,0 +1,10 @@
+=== Controlador SDN Didático v2 (OpenFlow 1.0 / Hub) ===
+Iniciando servidor socket TCP em 0.0.0.0:6653...
+Traceback (most recent call last):
+  File "/home/iagora/TA-Network/Trabalho/Controlador-v2.py", line 230, in <module>
+    main()
+    ~~~~^^
+  File "/home/iagora/TA-Network/Trabalho/Controlador-v2.py", line 150, in main
+    server_socket.bind((HOST, PORT))
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+OSError: [Errno 98] Address already in use

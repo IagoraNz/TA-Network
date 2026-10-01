@@ -1,0 +1,35 @@
+top - 17:43:38 up  1:21,  1 user,  load average: 2.37, 2.76, 2.56
+Tasks:   1 total,   1 running,   0 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  6.2 us,  2.5 sy,  0.0 ni, 91.3 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st 
+MiB Mem :   7751.7 total,   4362.5 free,   1707.8 used,   1904.2 buff/cache     
+MiB Swap:   2048.0 total,   2048.0 free,      0.0 used.   6043.9 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+  30100 iagora    20   0   17420  11528   7384 R 100.0   0.1   0:00.21 python3
+
+top - 17:43:39 up  1:21,  1 user,  load average: 2.37, 2.76, 2.56
+Tasks:   1 total,   1 running,   0 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  5.4 us,  1.2 sy,  0.0 ni, 93.4 id,  0.1 wa,  0.0 hi,  0.0 si,  0.0 st 
+MiB Mem :   7751.7 total,   4362.5 free,   1707.8 used,   1904.2 buff/cache     
+MiB Swap:   2048.0 total,   2048.0 free,      0.0 used.   6043.9 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+  30100 iagora    20   0   17420  11528   7384 R 100.0   0.1   0:01.22 python3
+
+top - 17:43:40 up  1:21,  1 user,  load average: 2.37, 2.76, 2.56
+Tasks:   1 total,   1 running,   0 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  5.2 us,  1.4 sy,  0.0 ni, 93.4 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st 
+MiB Mem :   7751.7 total,   4362.5 free,   1707.8 used,   1904.2 buff/cache     
+MiB Swap:   2048.0 total,   2048.0 free,      0.0 used.   6043.9 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+  30100 iagora    20   0   17420  11528   7384 R  99.0   0.1   0:02.21 python3
+
+top - 17:43:41 up  1:21,  1 user,  load average: 2.37, 2.76, 2.56
+Tasks:   1 total,   1 running,   0 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  5.3 us,  1.2 sy,  0.0 ni, 93.5 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st 
+MiB Mem :   7751.7 total,   4368.9 free,   1701.3 used,   1904.2 buff/cache     
+MiB Swap:   2048.0 total,   2048.0 free,      0.0 used.   6050.3 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+  30100 iagora    20   0   17420  11528   7384 R 100.0   0.1   0:03.22 python3

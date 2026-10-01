@@ -1,0 +1,65 @@
+=== Controlador SDN Didático v2 (OpenFlow 1.0 / Hub) ===
+Iniciando servidor socket TCP em 0.0.0.0:6653...
+Aguardando conexões dos switches (porta 6653)...
+
+[16:32:57.592] [+] Conexão TCP estabelecida com o switch: 127.0.0.1:57397
+[16:32:57.592]     <<< HELLO de 127.0.0.1:57397 (xid=1)
+[16:32:57.592]     >>> FEATURES_REQUEST para 127.0.0.1:57397
+[16:32:57.592]     <<< FEATURES_REPLY: DPID=0000000000000001 buffers=256 tabelas=2 portas=4 (0.13 ms)
+[16:32:57.592] [OK] Handshake concluído com DPID 1 (1 switch(es) conectado(s))
+[16:32:57.592] [+] Conexão TCP estabelecida com o switch: 127.0.0.1:53393
+[16:32:57.592]     <<< HELLO de 127.0.0.1:53393 (xid=1)
+[16:32:57.592]     >>> FEATURES_REQUEST para 127.0.0.1:53393
+[16:32:57.592]     <<< FEATURES_REPLY: DPID=0000000000000002 buffers=256 tabelas=2 portas=4 (0.04 ms)
+[16:32:57.592] [OK] Handshake concluído com DPID 2 (2 switch(es) conectado(s))
+[16:32:57.592] [+] Conexão TCP estabelecida com o switch: 127.0.0.1:37931
+[16:32:57.593]     <<< HELLO de 127.0.0.1:37931 (xid=1)
+[16:32:57.593]     >>> FEATURES_REQUEST para 127.0.0.1:37931
+[16:32:57.593]     <<< FEATURES_REPLY: DPID=0000000000000003 buffers=256 tabelas=2 portas=4 (0.04 ms)
+[16:32:57.593] [OK] Handshake concluído com DPID 3 (3 switch(es) conectado(s))
+[16:32:57.593] [+] Conexão TCP estabelecida com o switch: 127.0.0.1:38799
+[16:32:57.593]     <<< HELLO de 127.0.0.1:38799 (xid=1)
+[16:32:57.593]     >>> FEATURES_REQUEST para 127.0.0.1:38799
+[16:32:57.593]     <<< FEATURES_REPLY: DPID=0000000000000004 buffers=256 tabelas=2 portas=4 (0.05 ms)
+[16:32:57.593] [OK] Handshake concluído com DPID 4 (4 switch(es) conectado(s))
+[16:32:57.593] [+] Conexão TCP estabelecida com o switch: 127.0.0.1:48385
+[16:32:57.593]     <<< HELLO de 127.0.0.1:48385 (xid=1)
+[16:32:57.593]     >>> FEATURES_REQUEST para 127.0.0.1:48385
+[16:32:57.593]     <<< FEATURES_REPLY: DPID=0000000000000005 buffers=256 tabelas=2 portas=4 (0.04 ms)
+[16:32:57.593] [OK] Handshake concluído com DPID 5 (5 switch(es) conectado(s))
+[16:32:57.617] [STATS] switches=5 packet_in/s=1707 msgs/s=1707
+[16:32:58.618] [STATS] switches=5 packet_in/s=72629 msgs/s=72629
+[16:32:59.618] [STATS] switches=5 packet_in/s=76700 msgs/s=76700
+[16:33:00.618] [STATS] switches=5 packet_in/s=75283 msgs/s=75283
+[16:33:01.618] [STATS] switches=5 packet_in/s=74461 msgs/s=74461
+[16:33:02.618] [STATS] switches=5 packet_in/s=71897 msgs/s=71897
+[16:33:03.619] [STATS] switches=5 packet_in/s=68394 msgs/s=68394
+[16:33:04.619] [STATS] switches=5 packet_in/s=74948 msgs/s=74948
+[16:33:05.619] [STATS] switches=5 packet_in/s=80024 msgs/s=80024
+[16:33:06.619] [STATS] switches=5 packet_in/s=76818 msgs/s=76818
+[16:33:07.619] [STATS] switches=5 packet_in/s=80098 msgs/s=80098
+[16:33:08.619] [STATS] switches=5 packet_in/s=69623 msgs/s=69623
+[16:33:09.620] [STATS] switches=5 packet_in/s=80472 msgs/s=80472
+[16:33:10.620] [STATS] switches=5 packet_in/s=81789 msgs/s=81789
+[16:33:11.620] [STATS] switches=5 packet_in/s=75743 msgs/s=75743
+[16:33:12.620] [STATS] switches=5 packet_in/s=76198 msgs/s=76198
+[16:33:13.621] [STATS] switches=5 packet_in/s=72485 msgs/s=72485
+[16:33:14.621] [STATS] switches=5 packet_in/s=80678 msgs/s=80678
+[16:33:15.621] [STATS] switches=5 packet_in/s=81814 msgs/s=81814
+[16:33:16.621] [STATS] switches=5 packet_in/s=80841 msgs/s=80841
+[16:33:17.621] [STATS] switches=5 packet_in/s=80094 msgs/s=80094
+[16:33:18.621] [STATS] switches=5 packet_in/s=71596 msgs/s=71596
+[16:33:19.621] [STATS] switches=5 packet_in/s=79630 msgs/s=79630
+[16:33:20.621] [STATS] switches=5 packet_in/s=83883 msgs/s=83883
+[16:33:21.621] [STATS] switches=5 packet_in/s=84735 msgs/s=84735
+[16:33:22.621] [STATS] switches=5 packet_in/s=79451 msgs/s=79451
+[16:33:23.621] [STATS] switches=5 packet_in/s=76846 msgs/s=76846
+[16:33:24.622] [STATS] switches=5 packet_in/s=83779 msgs/s=83779
+[16:33:25.622] [STATS] switches=5 packet_in/s=83913 msgs/s=83913
+[16:33:26.622] [STATS] switches=5 packet_in/s=90329 msgs/s=90329
+[16:33:27.622] [STATS] switches=5 packet_in/s=85164 msgs/s=85164
+[16:33:28.193] [-] Switch DPID 1 desconectado: Conexão encerrada pelo switch.
+[16:33:28.194] [-] Switch DPID 2 desconectado: Conexão encerrada pelo switch.
+[16:33:28.194] [-] Switch DPID 3 desconectado: Conexão encerrada pelo switch.
+[16:33:28.194] [-] Switch DPID 4 desconectado: Conexão encerrada pelo switch.
+[16:33:28.194] [-] Switch DPID 5 desconectado: Conexão encerrada pelo switch.

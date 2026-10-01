@@ -1,0 +1,14 @@
+=== Controlador SDN Didático v2 (OpenFlow 1.0 / Hub) ===
+Iniciando servidor socket TCP em 0.0.0.0:6653...
+Aguardando conexões dos switches (porta 6653)...
+
+[17:02:08.792] [STATS] switches=0 packet_in/s=0 msgs/s=0
+[17:02:09.793] [STATS] switches=0 packet_in/s=0 msgs/s=0
+[17:02:10.793] [STATS] switches=0 packet_in/s=0 msgs/s=0
+[17:02:11.793] [STATS] switches=0 packet_in/s=0 msgs/s=0
+[17:02:12.793] [STATS] switches=0 packet_in/s=0 msgs/s=0
+[17:02:13.794] [STATS] switches=0 packet_in/s=0 msgs/s=0
+[17:02:14.794] [STATS] switches=0 packet_in/s=0 msgs/s=0
+[17:02:15.795] [STATS] switches=0 packet_in/s=0 msgs/s=0
+[17:02:16.796] [STATS] switches=0 packet_in/s=0 msgs/s=0
+[17:02:17.796] [STATS] switches=0 packet_in/s=0 msgs/s=0

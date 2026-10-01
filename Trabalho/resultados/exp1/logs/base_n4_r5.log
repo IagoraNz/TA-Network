@@ -1,0 +1,35 @@
+=== Controlador SDN Didático v2 (OpenFlow 1.0 / Hub) ===
+Iniciando servidor socket TCP em 0.0.0.0:6653...
+Aguardando conexões dos switches (porta 6653)...
+
+[18:10:51.670] [+] Conexão TCP estabelecida com o switch: 127.0.0.1:47478
+[18:10:51.670]     <<< HELLO de 127.0.0.1:47478 (xid=129)
+[18:10:51.671]     >>> FEATURES_REQUEST para 127.0.0.1:47478
+[18:10:51.671]     <<< FEATURES_REPLY: DPID=0000000000000004 buffers=0 tabelas=254 portas=3 (0.86 ms)
+[18:10:51.671] [OK] Handshake concluído com DPID 4 (1 switch(es) conectado(s))
+[18:10:51.671] [+] Conexão TCP estabelecida com o switch: 127.0.0.1:47494
+[18:10:51.671]     <<< HELLO de 127.0.0.1:47494 (xid=130)
+[18:10:51.671]     >>> FEATURES_REQUEST para 127.0.0.1:47494
+[18:10:52.172]     <<< FEATURES_REPLY: DPID=0000000000000001 buffers=0 tabelas=254 portas=3 (500.87 ms)
+[18:10:52.172] [OK] Handshake concluído com DPID 1 (2 switch(es) conectado(s))
+[18:10:52.172] [+] Conexão TCP estabelecida com o switch: 127.0.0.1:47506
+[18:10:52.173]     <<< HELLO de 127.0.0.1:47506 (xid=131)
+[18:10:52.173]     >>> FEATURES_REQUEST para 127.0.0.1:47506
+[18:10:52.673]     <<< FEATURES_REPLY: DPID=0000000000000003 buffers=0 tabelas=254 portas=4 (500.37 ms)
+[18:10:52.673] [OK] Handshake concluído com DPID 3 (3 switch(es) conectado(s))
+[18:10:52.673] [STATS] switches=3 packet_in/s=0 msgs/s=0
+[18:10:52.673] [+] Conexão TCP estabelecida com o switch: 127.0.0.1:47510
+[18:10:52.673]     <<< HELLO de 127.0.0.1:47510 (xid=132)
+[18:10:52.673] [ERRO] Handshake falhou com ('127.0.0.1', 47510): [Errno 32] Broken pipe
+[18:10:53.674] [STATS] switches=3 packet_in/s=0 msgs/s=0
+[18:10:53.674] [+] Conexão TCP estabelecida com o switch: 127.0.0.1:47524
+[18:10:53.674]     <<< HELLO de 127.0.0.1:47524 (xid=133)
+[18:10:53.674]     >>> FEATURES_REQUEST para 127.0.0.1:47524
+[18:10:54.174]     <<< FEATURES_REPLY: DPID=0000000000000002 buffers=0 tabelas=254 portas=4 (499.85 ms)
+[18:10:54.174] [OK] Handshake concluído com DPID 2 (4 switch(es) conectado(s))
+[18:10:54.675] [STATS] switches=4 packet_in/s=0 msgs/s=0
+[18:10:55.676] [STATS] switches=4 packet_in/s=0 msgs/s=0
+[18:10:56.090] [-] Switch DPID 4 desconectado: Conexão encerrada pelo switch.
+[18:10:56.091] [-] Switch DPID 1 desconectado: Conexão encerrada pelo switch.
+[18:10:56.091] [-] Switch DPID 3 desconectado: Conexão encerrada pelo switch.
+[18:10:56.091] [-] Switch DPID 2 desconectado: Conexão encerrada pelo switch.

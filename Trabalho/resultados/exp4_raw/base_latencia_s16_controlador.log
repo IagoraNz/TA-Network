@@ -1,0 +1,19 @@
+=== Controlador SDN Didático v2 (OpenFlow 1.0 / Hub) ===
+Iniciando servidor socket TCP em 0.0.0.0:6653...
+Aguardando conexões dos switches (porta 6653)...
+
+[16:36:47.879] [+] Conexão TCP estabelecida com o switch: 127.0.0.1:55465
+[16:36:51.901] [ERRO] Handshake falhou com ('127.0.0.1', 55465): [Errno 104] Connection reset by peer
+[16:36:51.901] [STATS] switches=0 packet_in/s=0 msgs/s=0
+[16:36:51.901] [+] Conexão TCP estabelecida com o switch: 127.0.0.1:41249
+[16:36:51.901] [ERRO] Handshake falhou com ('127.0.0.1', 41249): Conexão encerrada pelo switch/cliente.
+[16:36:51.901] [+] Conexão TCP estabelecida com o switch: 127.0.0.1:52769
+[16:36:51.901] [ERRO] Handshake falhou com ('127.0.0.1', 52769): Conexão encerrada pelo switch/cliente.
+[16:36:51.901] [+] Conexão TCP estabelecida com o switch: 127.0.0.1:53723
+[16:36:51.901] [ERRO] Handshake falhou com ('127.0.0.1', 53723): Conexão encerrada pelo switch/cliente.
+[16:36:51.901] [+] Conexão TCP estabelecida com o switch: 127.0.0.1:44809
+[16:36:51.901] [ERRO] Handshake falhou com ('127.0.0.1', 44809): Conexão encerrada pelo switch/cliente.
+[16:36:51.901] [+] Conexão TCP estabelecida com o switch: 127.0.0.1:52179
+[16:36:51.901] [ERRO] Handshake falhou com ('127.0.0.1', 52179): Conexão encerrada pelo switch/cliente.
+[16:36:51.901] [+] Conexão TCP estabelecida com o switch: 127.0.0.1:58447
+[16:36:51.901] [ERRO] Handshake falhou com ('127.0.0.1', 58447): Conexão encerrada pelo switch/cliente.

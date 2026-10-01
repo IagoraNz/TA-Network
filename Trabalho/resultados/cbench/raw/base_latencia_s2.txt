@@ -1,0 +1,22 @@
+$ cbench -c 127.0.0.1 -p 6653 -m 10000 -l 10 -s 2
+17:09:46.373 2   switches: flows/sec:  181598  180328   total = 36.192596 per ms 
+17:09:56.473 2   switches: flows/sec:  196961  195614   total = 39.257496 per ms 
+17:10:06.574 2   switches: flows/sec:  213130  211715   total = 42.484496 per ms 
+17:10:16.674 2   switches: flows/sec:  247226  245885   total = 49.311075 per ms 
+17:10:26.774 2   switches: flows/sec:  221558  220158   total = 44.171596 per ms 
+17:10:36.874 2   switches: flows/sec:  201989  200631   total = 40.261996 per ms 
+17:10:46.974 2   switches: flows/sec:  198598  197239   total = 39.583676 per ms 
+17:10:57.075 2   switches: flows/sec:  220754  219405   total = 44.015896 per ms 
+17:11:07.175 2   switches: flows/sec:  224251  222855   total = 44.710596 per ms 
+17:11:17.275 2   switches: flows/sec:  264376  263042   total = 52.741789 per ms 
+RESULT: 2 switches 9 tests min/max/avg/stdev = 39257.50/52741.79/44059.85/4260.85 responses/s
+cbench: controller benchmarking tool
+   running in mode 'latency'
+   connecting to controller at 127.0.0.1:6653 
+   faking 2 switches offset 1 :: 10 tests each; 10000 ms per test
+   with 100000 unique source MACs per switch
+   learning destination mac addresses before the test
+   starting test with 0 ms delay after features_reply
+   ignoring first 1 "warmup" and last 0 "cooldown" loops
+   connection delay of 0ms per 1 switch(es)
+   debugging info is off

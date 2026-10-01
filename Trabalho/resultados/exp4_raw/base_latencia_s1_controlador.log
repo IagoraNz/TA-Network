@@ -1,0 +1,40 @@
+=== Controlador SDN Didático v2 (OpenFlow 1.0 / Hub) ===
+Iniciando servidor socket TCP em 0.0.0.0:6653...
+Aguardando conexões dos switches (porta 6653)...
+
+[16:26:32.293] [+] Conexão TCP estabelecida com o switch: 127.0.0.1:35465
+[16:26:32.294]     <<< HELLO de 127.0.0.1:35465 (xid=1)
+[16:26:32.294]     >>> FEATURES_REQUEST para 127.0.0.1:35465
+[16:26:32.294]     <<< FEATURES_REPLY: DPID=0000000000000001 buffers=256 tabelas=2 portas=4 (0.07 ms)
+[16:26:32.294] [OK] Handshake concluído com DPID 1 (1 switch(es) conectado(s))
+[16:26:32.301] [STATS] switches=1 packet_in/s=394 msgs/s=394
+[16:26:33.301] [STATS] switches=1 packet_in/s=40510 msgs/s=40510
+[16:26:34.301] [STATS] switches=1 packet_in/s=37220 msgs/s=37220
+[16:26:35.302] [STATS] switches=1 packet_in/s=29928 msgs/s=29928
+[16:26:36.303] [STATS] switches=1 packet_in/s=25708 msgs/s=25708
+[16:26:37.303] [STATS] switches=1 packet_in/s=26168 msgs/s=26168
+[16:26:38.304] [STATS] switches=1 packet_in/s=22399 msgs/s=22399
+[16:26:39.305] [STATS] switches=1 packet_in/s=24347 msgs/s=24347
+[16:26:40.305] [STATS] switches=1 packet_in/s=24191 msgs/s=24191
+[16:26:41.305] [STATS] switches=1 packet_in/s=26538 msgs/s=26538
+[16:26:42.306] [STATS] switches=1 packet_in/s=27049 msgs/s=27049
+[16:26:43.306] [STATS] switches=1 packet_in/s=21566 msgs/s=21566
+[16:26:44.307] [STATS] switches=1 packet_in/s=26093 msgs/s=26093
+[16:26:45.307] [STATS] switches=1 packet_in/s=27536 msgs/s=27536
+[16:26:46.307] [STATS] switches=1 packet_in/s=28414 msgs/s=28414
+[16:26:47.307] [STATS] switches=1 packet_in/s=27555 msgs/s=27555
+[16:26:48.308] [STATS] switches=1 packet_in/s=25187 msgs/s=25187
+[16:26:49.309] [STATS] switches=1 packet_in/s=27566 msgs/s=27566
+[16:26:50.309] [STATS] switches=1 packet_in/s=28196 msgs/s=28196
+[16:26:51.309] [STATS] switches=1 packet_in/s=26468 msgs/s=26468
+[16:26:52.310] [STATS] switches=1 packet_in/s=26061 msgs/s=26061
+[16:26:53.310] [STATS] switches=1 packet_in/s=24552 msgs/s=24552
+[16:26:54.310] [STATS] switches=1 packet_in/s=27588 msgs/s=27588
+[16:26:55.310] [STATS] switches=1 packet_in/s=30463 msgs/s=30463
+[16:26:56.311] [STATS] switches=1 packet_in/s=29426 msgs/s=29426
+[16:26:57.311] [STATS] switches=1 packet_in/s=29773 msgs/s=29773
+[16:26:58.312] [STATS] switches=1 packet_in/s=27467 msgs/s=27467
+[16:26:59.313] [STATS] switches=1 packet_in/s=29645 msgs/s=29645
+[16:27:00.313] [STATS] switches=1 packet_in/s=30024 msgs/s=30024
+[16:27:01.313] [STATS] switches=1 packet_in/s=30011 msgs/s=30011
+[16:27:02.314] [STATS] switches=1 packet_in/s=29949 msgs/s=29949

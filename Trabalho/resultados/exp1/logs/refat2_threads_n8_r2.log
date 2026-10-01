@@ -1,0 +1,17 @@
+=== Controlador v3 (threading) em 0.0.0.0:6653 ===
+[18:13:39] [OK] Handshake com DPID 1 (Thread-1 (atender_switch))
+[18:13:39] [OK] Handshake com DPID 3 (Thread-3 (atender_switch))
+[18:13:39] [OK] Handshake com DPID 2 (Thread-4 (atender_switch))
+[18:13:39] [OK] Handshake com DPID 8 (Thread-5 (atender_switch))
+[18:13:39] [OK] Handshake com DPID 6 (Thread-2 (atender_switch))
+[18:13:39] [OK] Handshake com DPID 7 (Thread-6 (atender_switch))[18:13:39] [OK] Handshake com DPID 4 (Thread-7 (atender_switch))
+
+[18:13:39] [OK] Handshake com DPID 5 (Thread-8 (atender_switch))
+[-] Switch 1 desconectado
+[-] Switch 3 desconectado[-] Switch 6 desconectado
+
+[-] Switch 2 desconectado[-] Switch 7 desconectado[-] Switch 8 desconectado
+
+[-] Switch 4 desconectado[-] Switch 5 desconectado
+
+

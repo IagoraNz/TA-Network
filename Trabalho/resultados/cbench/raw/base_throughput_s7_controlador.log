@@ -1,0 +1,147 @@
+=== Controlador SDN Didático v2 (OpenFlow 1.0 / Hub) ===
+Iniciando servidor socket TCP em 0.0.0.0:6653...
+Aguardando conexões dos switches (porta 6653)...
+
+[17:54:01.193] [+] Conexão TCP estabelecida com o switch: 127.0.0.1:52765
+[17:54:01.193]     <<< HELLO de 127.0.0.1:52765 (xid=1)
+[17:54:01.193]     >>> FEATURES_REQUEST para 127.0.0.1:52765
+[17:54:01.194]     <<< FEATURES_REPLY: DPID=0000000000000001 buffers=256 tabelas=2 portas=4 (0.15 ms)
+[17:54:01.194] [OK] Handshake concluído com DPID 1 (1 switch(es) conectado(s))
+[17:54:01.194] [+] Conexão TCP estabelecida com o switch: 127.0.0.1:39585
+[17:54:01.194]     <<< HELLO de 127.0.0.1:39585 (xid=1)
+[17:54:01.194]     >>> FEATURES_REQUEST para 127.0.0.1:39585
+[17:54:01.194]     <<< FEATURES_REPLY: DPID=0000000000000002 buffers=256 tabelas=2 portas=4 (0.07 ms)
+[17:54:01.194] [OK] Handshake concluído com DPID 2 (2 switch(es) conectado(s))
+[17:54:01.194] [+] Conexão TCP estabelecida com o switch: 127.0.0.1:45539
+[17:54:01.194]     <<< HELLO de 127.0.0.1:45539 (xid=1)
+[17:54:01.194]     >>> FEATURES_REQUEST para 127.0.0.1:45539
+[17:54:01.194]     <<< FEATURES_REPLY: DPID=0000000000000003 buffers=256 tabelas=2 portas=4 (0.09 ms)
+[17:54:01.194] [OK] Handshake concluído com DPID 3 (3 switch(es) conectado(s))
+[17:54:01.194] [+] Conexão TCP estabelecida com o switch: 127.0.0.1:47461
+[17:54:01.194]     <<< HELLO de 127.0.0.1:47461 (xid=1)
+[17:54:01.194]     >>> FEATURES_REQUEST para 127.0.0.1:47461
+[17:54:01.194]     <<< FEATURES_REPLY: DPID=0000000000000004 buffers=256 tabelas=2 portas=4 (0.13 ms)
+[17:54:01.194] [OK] Handshake concluído com DPID 4 (4 switch(es) conectado(s))
+[17:54:01.194] [+] Conexão TCP estabelecida com o switch: 127.0.0.1:42773
+[17:54:01.194]     <<< HELLO de 127.0.0.1:42773 (xid=1)
+[17:54:01.194]     >>> FEATURES_REQUEST para 127.0.0.1:42773
+[17:54:01.194]     <<< FEATURES_REPLY: DPID=0000000000000005 buffers=256 tabelas=2 portas=4 (0.15 ms)
+[17:54:01.194] [OK] Handshake concluído com DPID 5 (5 switch(es) conectado(s))
+[17:54:01.194] [+] Conexão TCP estabelecida com o switch: 127.0.0.1:57357
+[17:54:01.194]     <<< HELLO de 127.0.0.1:57357 (xid=1)
+[17:54:01.194]     >>> FEATURES_REQUEST para 127.0.0.1:57357
+[17:54:01.195]     <<< FEATURES_REPLY: DPID=0000000000000006 buffers=256 tabelas=2 portas=4 (0.42 ms)
+[17:54:01.195] [OK] Handshake concluído com DPID 6 (6 switch(es) conectado(s))
+[17:54:01.195] [+] Conexão TCP estabelecida com o switch: 127.0.0.1:56935
+[17:54:01.195]     <<< HELLO de 127.0.0.1:56935 (xid=1)
+[17:54:01.195]     >>> FEATURES_REQUEST para 127.0.0.1:56935
+[17:54:01.195]     <<< FEATURES_REPLY: DPID=0000000000000007 buffers=256 tabelas=2 portas=4 (0.50 ms)
+[17:54:01.195] [OK] Handshake concluído com DPID 7 (7 switch(es) conectado(s))
+[17:54:02.160] [STATS] switches=7 packet_in/s=45659 msgs/s=45659
+[17:54:03.160] [STATS] switches=7 packet_in/s=46092 msgs/s=46092
+[17:54:04.161] [STATS] switches=7 packet_in/s=44124 msgs/s=44124
+[17:54:05.161] [STATS] switches=7 packet_in/s=45224 msgs/s=45224
+[17:54:06.161] [STATS] switches=7 packet_in/s=44874 msgs/s=44874
+[17:54:07.161] [STATS] switches=7 packet_in/s=45865 msgs/s=45865
+[17:54:08.161] [STATS] switches=7 packet_in/s=45365 msgs/s=45365
+[17:54:09.161] [STATS] switches=7 packet_in/s=46320 msgs/s=46320
+[17:54:10.161] [STATS] switches=7 packet_in/s=46942 msgs/s=46942
+[17:54:11.161] [STATS] switches=7 packet_in/s=47060 msgs/s=47060
+[17:54:12.161] [STATS] switches=7 packet_in/s=65792 msgs/s=65792
+[17:54:13.161] [STATS] switches=7 packet_in/s=47180 msgs/s=47180
+[17:54:14.162] [STATS] switches=7 packet_in/s=47275 msgs/s=47275
+[17:54:15.162] [STATS] switches=7 packet_in/s=47285 msgs/s=47285
+[17:54:16.162] [STATS] switches=7 packet_in/s=48766 msgs/s=48766
+[17:54:17.162] [STATS] switches=7 packet_in/s=48242 msgs/s=48242
+[17:54:18.162] [STATS] switches=7 packet_in/s=46762 msgs/s=46762
+[17:54:19.162] [STATS] switches=7 packet_in/s=46975 msgs/s=46975
+[17:54:20.162] [STATS] switches=7 packet_in/s=47514 msgs/s=47514
+[17:54:21.162] [STATS] switches=7 packet_in/s=47604 msgs/s=47604
+[17:54:22.162] [STATS] switches=7 packet_in/s=64544 msgs/s=64544
+[17:54:23.162] [STATS] switches=7 packet_in/s=47718 msgs/s=47718
+[17:54:24.162] [STATS] switches=7 packet_in/s=45609 msgs/s=45609
+[17:54:25.162] [STATS] switches=7 packet_in/s=45554 msgs/s=45554
+[17:54:26.162] [STATS] switches=7 packet_in/s=45776 msgs/s=45776
+[17:54:27.163] [STATS] switches=7 packet_in/s=46202 msgs/s=46202
+[17:54:28.163] [STATS] switches=7 packet_in/s=46086 msgs/s=46086
+[17:54:29.163] [STATS] switches=7 packet_in/s=46707 msgs/s=46707
+[17:54:30.163] [STATS] switches=7 packet_in/s=46446 msgs/s=46446
+[17:54:31.163] [STATS] switches=7 packet_in/s=48201 msgs/s=48201
+[17:54:32.163] [STATS] switches=7 packet_in/s=58966 msgs/s=58966
+[17:54:33.163] [STATS] switches=7 packet_in/s=46081 msgs/s=46081
+[17:54:34.163] [STATS] switches=7 packet_in/s=47778 msgs/s=47778
+[17:54:35.163] [STATS] switches=7 packet_in/s=49628 msgs/s=49628
+[17:54:36.163] [STATS] switches=7 packet_in/s=48158 msgs/s=48158
+[17:54:37.163] [STATS] switches=7 packet_in/s=47092 msgs/s=47092
+[17:54:38.163] [STATS] switches=7 packet_in/s=46695 msgs/s=46695
+[17:54:39.163] [STATS] switches=7 packet_in/s=45315 msgs/s=45315
+[17:54:40.163] [STATS] switches=7 packet_in/s=46247 msgs/s=46247
+[17:54:41.164] [STATS] switches=7 packet_in/s=45946 msgs/s=45946
+[17:54:42.164] [STATS] switches=7 packet_in/s=61407 msgs/s=61407
+[17:54:43.164] [STATS] switches=7 packet_in/s=47138 msgs/s=47138
+[17:54:44.164] [STATS] switches=7 packet_in/s=48153 msgs/s=48153
+[17:54:45.164] [STATS] switches=7 packet_in/s=46867 msgs/s=46867
+[17:54:46.164] [STATS] switches=7 packet_in/s=47849 msgs/s=47849
+[17:54:47.164] [STATS] switches=7 packet_in/s=46634 msgs/s=46634
+[17:54:48.164] [STATS] switches=7 packet_in/s=46913 msgs/s=46913
+[17:54:49.164] [STATS] switches=7 packet_in/s=49111 msgs/s=49111
+[17:54:50.164] [STATS] switches=7 packet_in/s=48387 msgs/s=48387
+[17:54:51.164] [STATS] switches=7 packet_in/s=49193 msgs/s=49193
+[17:54:52.164] [STATS] switches=7 packet_in/s=62509 msgs/s=62509
+[17:54:53.164] [STATS] switches=7 packet_in/s=48514 msgs/s=48514
+[17:54:54.164] [STATS] switches=7 packet_in/s=49523 msgs/s=49523
+[17:54:55.165] [STATS] switches=7 packet_in/s=48841 msgs/s=48841
+[17:54:56.165] [STATS] switches=7 packet_in/s=47990 msgs/s=47990
+[17:54:57.165] [STATS] switches=7 packet_in/s=47872 msgs/s=47872
+[17:54:58.165] [STATS] switches=7 packet_in/s=48220 msgs/s=48220
+[17:54:59.165] [STATS] switches=7 packet_in/s=47767 msgs/s=47767
+[17:55:00.165] [STATS] switches=7 packet_in/s=48950 msgs/s=48950
+[17:55:01.165] [STATS] switches=7 packet_in/s=48855 msgs/s=48855
+[17:55:02.165] [STATS] switches=7 packet_in/s=63422 msgs/s=63422
+[17:55:03.165] [STATS] switches=7 packet_in/s=49462 msgs/s=49462
+[17:55:04.165] [STATS] switches=7 packet_in/s=48101 msgs/s=48101
+[17:55:05.165] [STATS] switches=7 packet_in/s=49552 msgs/s=49552
+[17:55:06.165] [STATS] switches=7 packet_in/s=48606 msgs/s=48606
+[17:55:07.165] [STATS] switches=7 packet_in/s=46662 msgs/s=46662
+[17:55:08.165] [STATS] switches=7 packet_in/s=46619 msgs/s=46619
+[17:55:09.166] [STATS] switches=7 packet_in/s=45487 msgs/s=45487
+[17:55:10.166] [STATS] switches=7 packet_in/s=46436 msgs/s=46436
+[17:55:11.166] [STATS] switches=7 packet_in/s=45810 msgs/s=45810
+[17:55:12.166] [STATS] switches=7 packet_in/s=57819 msgs/s=57819
+[17:55:13.166] [STATS] switches=7 packet_in/s=45453 msgs/s=45453
+[17:55:14.166] [STATS] switches=7 packet_in/s=46153 msgs/s=46153
+[17:55:15.166] [STATS] switches=7 packet_in/s=45493 msgs/s=45493
+[17:55:16.166] [STATS] switches=7 packet_in/s=45167 msgs/s=45167
+[17:55:17.166] [STATS] switches=7 packet_in/s=45374 msgs/s=45374
+[17:55:18.166] [STATS] switches=7 packet_in/s=45278 msgs/s=45278
+[17:55:19.166] [STATS] switches=7 packet_in/s=44959 msgs/s=44959
+[17:55:20.167] [STATS] switches=7 packet_in/s=45912 msgs/s=45912
+[17:55:21.167] [STATS] switches=7 packet_in/s=46225 msgs/s=46225
+[17:55:22.167] [STATS] switches=7 packet_in/s=56192 msgs/s=56192
+[17:55:23.167] [STATS] switches=7 packet_in/s=44461 msgs/s=44461
+[17:55:24.167] [STATS] switches=7 packet_in/s=44412 msgs/s=44412
+[17:55:25.167] [STATS] switches=7 packet_in/s=44215 msgs/s=44215
+[17:55:26.167] [STATS] switches=7 packet_in/s=45568 msgs/s=45568
+[17:55:27.167] [STATS] switches=7 packet_in/s=45101 msgs/s=45101
+[17:55:28.167] [STATS] switches=7 packet_in/s=45915 msgs/s=45915
+[17:55:29.167] [STATS] switches=7 packet_in/s=46339 msgs/s=46339
+[17:55:30.167] [STATS] switches=7 packet_in/s=46090 msgs/s=46090
+[17:55:31.167] [STATS] switches=7 packet_in/s=46843 msgs/s=46843
+[17:55:32.168] [STATS] switches=7 packet_in/s=57901 msgs/s=57901
+[17:55:33.168] [STATS] switches=7 packet_in/s=50650 msgs/s=50650
+[17:55:34.168] [STATS] switches=7 packet_in/s=48075 msgs/s=48075
+[17:55:35.168] [STATS] switches=7 packet_in/s=46674 msgs/s=46674
+[17:55:36.168] [STATS] switches=7 packet_in/s=47912 msgs/s=47912
+[17:55:37.168] [STATS] switches=7 packet_in/s=49936 msgs/s=49936
+[17:55:38.168] [STATS] switches=7 packet_in/s=47389 msgs/s=47389
+[17:55:39.168] [STATS] switches=7 packet_in/s=46751 msgs/s=46751
+[17:55:40.168] [STATS] switches=7 packet_in/s=47062 msgs/s=47062
+[17:55:41.168] [STATS] switches=7 packet_in/s=47115 msgs/s=47115
+[17:55:42.168] [STATS] switches=7 packet_in/s=51184 msgs/s=51184
+[17:55:42.231] [-] Switch DPID 7 desconectado: [Errno 104] Connection reset by peer
+[17:55:42.231] [-] Switch DPID 1 desconectado: [Errno 104] Connection reset by peer
+[17:55:42.231] [-] Switch DPID 2 desconectado: [Errno 104] Connection reset by peer
+[17:55:42.231] [-] Switch DPID 3 desconectado: [Errno 104] Connection reset by peer
+[17:55:42.231] [-] Switch DPID 4 desconectado: [Errno 104] Connection reset by peer
+[17:55:42.231] [-] Switch DPID 5 desconectado: [Errno 104] Connection reset by peer
+[17:55:42.231] [-] Switch DPID 6 desconectado: [Errno 104] Connection reset by peer

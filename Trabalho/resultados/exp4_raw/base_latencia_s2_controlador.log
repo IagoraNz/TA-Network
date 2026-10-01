@@ -1,0 +1,45 @@
+=== Controlador SDN Didático v2 (OpenFlow 1.0 / Hub) ===
+Iniciando servidor socket TCP em 0.0.0.0:6653...
+Aguardando conexões dos switches (porta 6653)...
+
+[16:28:40.723] [+] Conexão TCP estabelecida com o switch: 127.0.0.1:48333
+[16:28:40.723]     <<< HELLO de 127.0.0.1:48333 (xid=1)
+[16:28:40.723]     >>> FEATURES_REQUEST para 127.0.0.1:48333
+[16:28:40.723]     <<< FEATURES_REPLY: DPID=0000000000000001 buffers=256 tabelas=2 portas=4 (0.12 ms)
+[16:28:40.723] [OK] Handshake concluído com DPID 1 (1 switch(es) conectado(s))
+[16:28:40.723] [+] Conexão TCP estabelecida com o switch: 127.0.0.1:50363
+[16:28:40.723]     <<< HELLO de 127.0.0.1:50363 (xid=1)
+[16:28:40.723]     >>> FEATURES_REQUEST para 127.0.0.1:50363
+[16:28:40.724]     <<< FEATURES_REPLY: DPID=0000000000000002 buffers=256 tabelas=2 portas=4 (0.03 ms)
+[16:28:40.724] [OK] Handshake concluído com DPID 2 (2 switch(es) conectado(s))
+[16:28:40.742] [STATS] switches=2 packet_in/s=1166 msgs/s=1166
+[16:28:41.742] [STATS] switches=2 packet_in/s=50719 msgs/s=50719
+[16:28:42.742] [STATS] switches=2 packet_in/s=49155 msgs/s=49155
+[16:28:43.742] [STATS] switches=2 packet_in/s=48790 msgs/s=48790
+[16:28:44.742] [STATS] switches=2 packet_in/s=49581 msgs/s=49581
+[16:28:45.743] [STATS] switches=2 packet_in/s=45661 msgs/s=45661
+[16:28:46.743] [STATS] switches=2 packet_in/s=44571 msgs/s=44571
+[16:28:47.744] [STATS] switches=2 packet_in/s=52391 msgs/s=52391
+[16:28:48.744] [STATS] switches=2 packet_in/s=49219 msgs/s=49219
+[16:28:49.745] [STATS] switches=2 packet_in/s=50965 msgs/s=50965
+[16:28:50.746] [STATS] switches=2 packet_in/s=50987 msgs/s=50987
+[16:28:51.746] [STATS] switches=2 packet_in/s=46283 msgs/s=46283
+[16:28:52.746] [STATS] switches=2 packet_in/s=50995 msgs/s=50995
+[16:28:53.747] [STATS] switches=2 packet_in/s=50758 msgs/s=50758
+[16:28:54.748] [STATS] switches=2 packet_in/s=47945 msgs/s=47945
+[16:28:55.748] [STATS] switches=2 packet_in/s=49823 msgs/s=49823
+[16:28:56.749] [STATS] switches=2 packet_in/s=43025 msgs/s=43025
+[16:28:57.749] [STATS] switches=2 packet_in/s=47831 msgs/s=47831
+[16:28:58.750] [STATS] switches=2 packet_in/s=48858 msgs/s=48858
+[16:28:59.750] [STATS] switches=2 packet_in/s=50283 msgs/s=50283
+[16:29:00.750] [STATS] switches=2 packet_in/s=49278 msgs/s=49278
+[16:29:01.751] [STATS] switches=2 packet_in/s=44620 msgs/s=44620
+[16:29:02.751] [STATS] switches=2 packet_in/s=48893 msgs/s=48893
+[16:29:03.752] [STATS] switches=2 packet_in/s=51237 msgs/s=51237
+[16:29:04.752] [STATS] switches=2 packet_in/s=48398 msgs/s=48398
+[16:29:05.752] [STATS] switches=2 packet_in/s=52008 msgs/s=52008
+[16:29:06.752] [STATS] switches=2 packet_in/s=47366 msgs/s=47366
+[16:29:07.753] [STATS] switches=2 packet_in/s=47005 msgs/s=47005
+[16:29:08.752] [STATS] switches=2 packet_in/s=50284 msgs/s=50284
+[16:29:09.752] [STATS] switches=2 packet_in/s=49060 msgs/s=49060
+[16:29:10.754] [STATS] switches=2 packet_in/s=50120 msgs/s=50120

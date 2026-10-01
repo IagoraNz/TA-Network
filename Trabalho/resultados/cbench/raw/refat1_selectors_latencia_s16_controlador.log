@@ -1,0 +1,33 @@
+=== Controlador v3 (selectors/EpollSelector) em 0.0.0.0:6653 ===
+[17:48:54] [OK] Handshake com DPID 1
+[17:48:54] [OK] Handshake com DPID 2
+[17:48:54] [OK] Handshake com DPID 3
+[17:48:54] [OK] Handshake com DPID 4
+[17:48:54] [OK] Handshake com DPID 5
+[17:48:54] [OK] Handshake com DPID 6
+[17:48:54] [OK] Handshake com DPID 7
+[17:48:54] [OK] Handshake com DPID 8
+[17:48:54] [OK] Handshake com DPID 9
+[17:48:54] [OK] Handshake com DPID 10
+[17:48:54] [OK] Handshake com DPID 11
+[17:48:54] [OK] Handshake com DPID 12
+[17:48:54] [OK] Handshake com DPID 13
+[17:48:54] [OK] Handshake com DPID 15
+[17:48:54] [OK] Handshake com DPID 14
+[17:48:54] [OK] Handshake com DPID 16
+[-] Switch 16 desconectado
+[-] Switch 15 desconectado
+[-] Switch 14 desconectado
+[-] Switch 13 desconectado
+[-] Switch 12 desconectado
+[-] Switch 11 desconectado
+[-] Switch 10 desconectado
+[-] Switch 9 desconectado
+[-] Switch 8 desconectado
+[-] Switch 7 desconectado
+[-] Switch 6 desconectado
+[-] Switch 5 desconectado
+[-] Switch 4 desconectado
+[-] Switch 3 desconectado
+[-] Switch 2 desconectado
+[-] Switch 1 desconectado

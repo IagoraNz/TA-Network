@@ -1,0 +1,22 @@
+$ cbench -c 127.0.0.1 -p 6653 -m 10000 -l 10 -s 6
+17:33:35.970 6   switches: flows/sec:  18521  18537  18558  18444  18508  18358   total = 11.092599 per ms 
+17:33:46.071 6   switches: flows/sec:  18274  17869  18294  18379  18289  18030   total = 10.913499 per ms 
+17:33:56.171 6   switches: flows/sec:  16863  16962  16914  16762  17078  16740   total = 10.131886 per ms 
+17:34:06.271 6   switches: flows/sec:  16096  16152  16099  16148  16040  16133   total = 9.666799 per ms 
+17:34:16.372 6   switches: flows/sec:  15671  15744  15820  15739  15676  15788   total = 9.443799 per ms 
+17:34:26.472 6   switches: flows/sec:  15361  15503  14932  15399  14954  15679   total = 9.182799 per ms 
+17:34:36.573 6   switches: flows/sec:  15819  15860  16036  16092  15763  15941   total = 9.551098 per ms 
+17:34:46.673 6   switches: flows/sec:  15785  15701  15853  15971  15554  15729   total = 9.459299 per ms 
+17:34:56.773 6   switches: flows/sec:  16007  15913  16054  16085  16076  16001   total = 9.613599 per ms 
+17:35:06.874 6   switches: flows/sec:  15995  15885  15707  15976  15988  16051   total = 9.560199 per ms 
+RESULT: 6 switches 9 tests min/max/avg/stdev = 9182.80/10913.50/9724.78/482.46 responses/s
+cbench: controller benchmarking tool
+   running in mode 'latency'
+   connecting to controller at 127.0.0.1:6653 
+   faking 6 switches offset 1 :: 10 tests each; 10000 ms per test
+   with 100000 unique source MACs per switch
+   learning destination mac addresses before the test
+   starting test with 0 ms delay after features_reply
+   ignoring first 1 "warmup" and last 0 "cooldown" loops
+   connection delay of 0ms per 1 switch(es)
+   debugging info is off

@@ -1,0 +1,22 @@
+$ cbench -c 127.0.0.1 -p 6653 -m 10000 -l 10 -s 8 -t
+18:01:04.690 8   switches: flows/sec:  1368033  1368033  1368033  1368033  1368033  1367234  1170722  1367234   total = 1074.516159 per ms 
+18:01:14.793 8   switches: flows/sec:  1368266  1367466  1367466  1367466  1367466  1367467  1167312  1367467   total = 1074.026430 per ms 
+18:01:24.895 8   switches: flows/sec:  1357074  1357074  1357074  1357074  1356275  1357075  1356374  1357075   total = 1085.446436 per ms 
+18:01:34.997 8   switches: flows/sec:  1294736  1294736  1294736  1294736  1294736  1294736  1294736  1294736   total = 1035.761145 per ms 
+18:01:45.100 8   switches: flows/sec:  1346684  1346684  1347484  1347484  1347484  1346685  1346685  1346685   total = 1077.516168 per ms 
+18:01:55.202 8   switches: flows/sec:  1331499  1331499  1332299  1332299  1332299  1332299  1331500  1332299   total = 1065.597062 per ms 
+18:02:05.303 8   switches: flows/sec:  1305126  1305126  1305925  1305126  1305126  1305126  1305126  1305126   total = 1044.135802 per ms 
+18:02:15.406 8   switches: flows/sec:  1336295  1335496  1335496  1335496  1335496  1335496  1335496  1335496   total = 1068.434604 per ms 
+18:02:25.508 8   switches: flows/sec:  1369862  1369862  1369862  1369862  1369862  1369063  1369063  1369063   total = 1095.620976 per ms 
+18:02:35.610 8   switches: flows/sec:  1341890  1341890  1341890  1341890  1341890  1341890  1341890  1342689   total = 1073.528777 per ms 
+RESULT: 8 switches 9 tests min/max/avg/stdev = 1035761.15/1095620.98/1068896.38/17739.83 responses/s
+cbench: controller benchmarking tool
+   running in mode 'throughput'
+   connecting to controller at 127.0.0.1:6653 
+   faking 8 switches offset 1 :: 10 tests each; 10000 ms per test
+   with 100000 unique source MACs per switch
+   learning destination mac addresses before the test
+   starting test with 0 ms delay after features_reply
+   ignoring first 1 "warmup" and last 0 "cooldown" loops
+   connection delay of 0ms per 1 switch(es)
+   debugging info is off

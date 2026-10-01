@@ -1,0 +1,22 @@
+$ cbench -c 127.0.0.1 -p 6653 -m 10000 -l 10 -s 16
+17:50:46.950 16  switches: flows/sec:  7070  7020  7015  7014  7038  7095  7012  6970  7055  7014  6992  6956  6969  7008  7056  7007   total = 11.229098 per ms 
+17:50:57.051 16  switches: flows/sec:  5440  5444  5464  5428  5388  5487  5492  5337  5538  5493  5489  5434  5379  5466  5429  5515   total = 8.722298 per ms 
+17:51:07.151 16  switches: flows/sec:  5329  5276  5252  5215  5128  5302  5255  5186  5273  5196  5274  5288  5378  5201  5200  5183   total = 8.393599 per ms 
+17:51:17.252 16  switches: flows/sec:  5224  5190  5195  5245  5214  5327  5308  5203  5273  5159  5278  5205  5208  5226  5225  5298   total = 8.377799 per ms 
+17:51:27.352 16  switches: flows/sec:  5168  5272  5289  5243  5261  5238  5217  5285  5086  5163  5249  5218  5203  5173  5221  5241   total = 8.352686 per ms 
+17:51:37.452 16  switches: flows/sec:  5612  5549  5599  5687  5650  5598  5617  5625  5618  5573  5666  5507  5497  5602  5587  5604   total = 8.959098 per ms 
+17:51:47.553 16  switches: flows/sec:  5740  5713  5632  5771  5717  5755  5721  5769  5816  5727  5720  5660  5765  5686  5741  5791   total = 9.172398 per ms 
+17:51:57.653 16  switches: flows/sec:  5873  5871  5794  5901  5842  5838  5837  5781  5975  5871  5979  5893  5894  5852  5846  5845   total = 9.389199 per ms 
+17:52:07.754 16  switches: flows/sec:  5707  5673  5717  5672  5661  5712  5658  5674  5705  5670  5639  5590  5694  5605  5638  5619   total = 9.063398 per ms 
+17:52:17.854 16  switches: flows/sec:  5300  5295  5172  5277  5278  5250  5291  5224  5247  5341  5291  5270  5287  5263  5326  5314   total = 8.442599 per ms 
+RESULT: 16 switches 9 tests min/max/avg/stdev = 8352.69/9389.20/8763.68/372.07 responses/s
+cbench: controller benchmarking tool
+   running in mode 'latency'
+   connecting to controller at 127.0.0.1:6653 
+   faking 16 switches offset 1 :: 10 tests each; 10000 ms per test
+   with 100000 unique source MACs per switch
+   learning destination mac addresses before the test
+   starting test with 0 ms delay after features_reply
+   ignoring first 1 "warmup" and last 0 "cooldown" loops
+   connection delay of 0ms per 1 switch(es)
+   debugging info is off

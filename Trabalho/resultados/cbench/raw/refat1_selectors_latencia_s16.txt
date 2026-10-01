@@ -1,0 +1,22 @@
+$ cbench -c 127.0.0.1 -p 6653 -m 10000 -l 10 -s 16
+17:49:04.883 16  switches: flows/sec:  85209  84609  84455  84402  83653  83582  83149  82524  82119  81589  80553  80290  78737  75710  69842  65394   total = 128.581649 per ms 
+17:49:14.983 16  switches: flows/sec:  85785  85146  85174  85181  84822  84169  83605  83037  82421  82237  81774  81041  79715  76086  70678  65716   total = 129.658622 per ms 
+17:49:25.083 16  switches: flows/sec:  83151  82691  82243  82250  82059  81084  80815  80930  80338  79814  78935  78433  77061  74781  69618  64586   total = 125.878862 per ms 
+17:49:35.184 16  switches: flows/sec:  84641  84193  83820  83944  83428  83236  82317  82023  81644  80576  80799  79617  78782  76064  70499  65670   total = 128.124916 per ms 
+17:49:45.284 16  switches: flows/sec:  83367  82779  82751  82369  81957  81700  81279  81025  80596  80054  79537  78055  76596  74572  70222  65170   total = 126.202799 per ms 
+17:49:55.384 16  switches: flows/sec:  82540  82075  81861  81682  81205  80756  80173  79809  79549  79184  78374  78072  75921  73354  68517  62879   total = 124.594950 per ms 
+17:50:05.485 16  switches: flows/sec:  78694  78176  77926  77759  77469  76881  76428  76054  75864  74793  74690  74184  72819  70489  65504  61091   total = 118.882076 per ms 
+17:50:15.585 16  switches: flows/sec:  82126  81559  81341  80978  80918  80390  79912  79255  78980  78764  78090  76594  75216  73137  68121  63463   total = 123.884363 per ms 
+17:50:25.686 16  switches: flows/sec:  83547  83186  82862  82408  82200  81804  81705  81177  80582  79979  79400  79305  77485  74909  68948  64420   total = 126.391637 per ms 
+17:50:35.786 16  switches: flows/sec:  82453  82010  81942  81524  81153  80870  80627  80107  79750  79467  78732  77926  76218  73663  68573  63543   total = 124.855713 per ms 
+RESULT: 16 switches 9 tests min/max/avg/stdev = 118882.08/129658.62/125385.99/2850.76 responses/s
+cbench: controller benchmarking tool
+   running in mode 'latency'
+   connecting to controller at 127.0.0.1:6653 
+   faking 16 switches offset 1 :: 10 tests each; 10000 ms per test
+   with 100000 unique source MACs per switch
+   learning destination mac addresses before the test
+   starting test with 0 ms delay after features_reply
+   ignoring first 1 "warmup" and last 0 "cooldown" loops
+   connection delay of 0ms per 1 switch(es)
+   debugging info is off

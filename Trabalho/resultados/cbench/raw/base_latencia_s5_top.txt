@@ -1,0 +1,908 @@
+top - 17:23:13 up  1:01,  1 user,  load average: 2.56, 2.69, 2.13
+Tasks:   1 total,   1 running,   0 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  4.9 us,  4.9 sy,  0.0 ni, 87.7 id,  0.0 wa,  0.0 hi,  2.5 si,  0.0 st 
+MiB Mem :   7751.7 total,   4359.8 free,   1717.0 used,   1897.7 buff/cache     
+MiB Swap:   2048.0 total,   2048.0 free,      0.0 used.   6034.7 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+  25629 iagora    20   0   17420  11540   7392 R  81.8   0.1   0:00.19 python3
+
+top - 17:23:14 up  1:01,  1 user,  load average: 2.56, 2.69, 2.13
+Tasks:   1 total,   1 running,   0 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  3.8 us,  5.9 sy,  0.0 ni, 87.5 id,  0.0 wa,  0.0 hi,  2.8 si,  0.0 st 
+MiB Mem :   7751.7 total,   4359.8 free,   1717.0 used,   1897.7 buff/cache     
+MiB Swap:   2048.0 total,   2048.0 free,      0.0 used.   6034.7 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+  25629 iagora    20   0   17420  11540   7392 R  85.0   0.1   0:01.04 python3
+
+top - 17:23:15 up  1:01,  1 user,  load average: 2.56, 2.69, 2.13
+Tasks:   1 total,   1 running,   0 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  4.2 us,  5.2 sy,  0.0 ni, 88.0 id,  0.0 wa,  0.0 hi,  2.6 si,  0.0 st 
+MiB Mem :   7751.7 total,   4359.8 free,   1717.0 used,   1897.7 buff/cache     
+MiB Swap:   2048.0 total,   2048.0 free,      0.0 used.   6034.7 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+  25629 iagora    20   0   17420  11540   7392 R  86.0   0.1   0:01.90 python3
+
+top - 17:23:16 up  1:01,  1 user,  load average: 2.52, 2.68, 2.13
+Tasks:   1 total,   1 running,   0 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  4.2 us,  6.0 sy,  0.0 ni, 87.3 id,  0.0 wa,  0.0 hi,  2.4 si,  0.0 st 
+MiB Mem :   7751.7 total,   4353.6 free,   1723.3 used,   1897.6 buff/cache     
+MiB Swap:   2048.0 total,   2048.0 free,      0.0 used.   6028.4 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+  25629 iagora    20   0   17420  11540   7392 R  86.0   0.1   0:02.76 python3
+
+top - 17:23:17 up  1:01,  1 user,  load average: 2.52, 2.68, 2.13
+Tasks:   1 total,   1 running,   0 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  4.4 us,  5.3 sy,  0.0 ni, 87.4 id,  0.0 wa,  0.0 hi,  2.8 si,  0.0 st 
+MiB Mem :   7751.7 total,   4353.6 free,   1723.3 used,   1897.6 buff/cache     
+MiB Swap:   2048.0 total,   2048.0 free,      0.0 used.   6028.4 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+  25629 iagora    20   0   17420  11540   7392 R  84.0   0.1   0:03.60 python3
+
+top - 17:23:18 up  1:01,  1 user,  load average: 2.52, 2.68, 2.13
+Tasks:   1 total,   1 running,   0 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  3.8 us,  6.3 sy,  0.0 ni, 87.2 id,  0.0 wa,  0.0 hi,  2.8 si,  0.0 st 
+MiB Mem :   7751.7 total,   4353.6 free,   1723.3 used,   1897.6 buff/cache     
+MiB Swap:   2048.0 total,   2048.0 free,      0.0 used.   6028.4 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+  25629 iagora    20   0   17420  11540   7392 R  87.0   0.1   0:04.47 python3
+
+top - 17:23:19 up  1:01,  1 user,  load average: 2.52, 2.68, 2.13
+Tasks:   1 total,   1 running,   0 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  3.8 us,  5.9 sy,  0.0 ni, 88.1 id,  0.0 wa,  0.0 hi,  2.2 si,  0.0 st 
+MiB Mem :   7751.7 total,   4352.7 free,   1724.2 used,   1897.5 buff/cache     
+MiB Swap:   2048.0 total,   2048.0 free,      0.0 used.   6027.4 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+  25629 iagora    20   0   17420  11540   7392 R  84.2   0.1   0:05.32 python3
+
+top - 17:23:20 up  1:01,  1 user,  load average: 2.52, 2.68, 2.13
+Tasks:   1 total,   0 running,   1 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  4.4 us,  6.2 sy,  0.0 ni, 87.4 id,  0.0 wa,  0.0 hi,  1.9 si,  0.0 st 
+MiB Mem :   7751.7 total,   4352.7 free,   1724.2 used,   1897.5 buff/cache     
+MiB Swap:   2048.0 total,   2048.0 free,      0.0 used.   6027.4 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+  25629 iagora    20   0   17420  11540   7392 S  86.0   0.1   0:06.18 python3
+
+top - 17:23:21 up  1:01,  1 user,  load average: 2.55, 2.68, 2.14
+Tasks:   1 total,   0 running,   1 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  4.0 us,  6.4 sy,  0.0 ni, 87.4 id,  0.0 wa,  0.0 hi,  2.2 si,  0.0 st 
+MiB Mem :   7751.7 total,   4352.7 free,   1724.2 used,   1897.5 buff/cache     
+MiB Swap:   2048.0 total,   2048.0 free,      0.0 used.   6027.4 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+  25629 iagora    20   0   17420  11540   7392 S  88.0   0.1   0:07.06 python3
+
+top - 17:23:22 up  1:01,  1 user,  load average: 2.55, 2.68, 2.14
+Tasks:   1 total,   1 running,   0 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  4.0 us,  5.9 sy,  0.0 ni, 87.4 id,  0.0 wa,  0.0 hi,  2.7 si,  0.0 st 
+MiB Mem :   7751.7 total,   4350.8 free,   1725.9 used,   1897.8 buff/cache     
+MiB Swap:   2048.0 total,   2048.0 free,      0.0 used.   6025.8 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+  25629 iagora    20   0   17420  11540   7392 R  87.0   0.1   0:07.93 python3
+
+top - 17:23:23 up  1:01,  1 user,  load average: 2.55, 2.68, 2.14
+Tasks:   1 total,   1 running,   0 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  3.7 us,  5.1 sy,  0.0 ni, 89.0 id,  0.0 wa,  0.0 hi,  2.2 si,  0.0 st 
+MiB Mem :   7751.7 total,   4350.8 free,   1725.9 used,   1897.8 buff/cache     
+MiB Swap:   2048.0 total,   2048.0 free,      0.0 used.   6025.8 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+  25629 iagora    20   0   17420  11540   7392 R  77.0   0.1   0:08.70 python3
+
+top - 17:23:24 up  1:01,  1 user,  load average: 2.55, 2.68, 2.14
+Tasks:   1 total,   1 running,   0 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  6.1 us,  6.1 sy,  0.0 ni, 85.9 id,  0.0 wa,  0.0 hi,  1.9 si,  0.0 st 
+MiB Mem :   7751.7 total,   4350.8 free,   1725.9 used,   1897.8 buff/cache     
+MiB Swap:   2048.0 total,   2048.0 free,      0.0 used.   6025.8 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+  25629 iagora    20   0   17420  11540   7392 R  83.0   0.1   0:09.53 python3
+
+top - 17:23:25 up  1:01,  1 user,  load average: 2.55, 2.68, 2.14
+Tasks:   1 total,   1 running,   0 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  3.9 us,  5.8 sy,  0.0 ni, 88.4 id,  0.0 wa,  0.0 hi,  1.9 si,  0.0 st 
+MiB Mem :   7751.7 total,   4351.9 free,   1724.8 used,   1897.7 buff/cache     
+MiB Swap:   2048.0 total,   2048.0 free,      0.0 used.   6026.8 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+  25629 iagora    20   0   17420  11540   7392 R  86.0   0.1   0:10.39 python3
+
+top - 17:23:26 up  1:01,  1 user,  load average: 2.51, 2.67, 2.14
+Tasks:   1 total,   0 running,   1 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  4.2 us,  6.1 sy,  0.0 ni, 87.1 id,  0.0 wa,  0.0 hi,  2.6 si,  0.0 st 
+MiB Mem :   7751.7 total,   4351.9 free,   1724.8 used,   1897.7 buff/cache     
+MiB Swap:   2048.0 total,   2048.0 free,      0.0 used.   6026.8 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+  25629 iagora    20   0   17420  11540   7392 S  88.1   0.1   0:11.28 python3
+
+top - 17:23:27 up  1:01,  1 user,  load average: 2.51, 2.67, 2.14
+Tasks:   1 total,   1 running,   0 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  3.8 us,  5.9 sy,  0.0 ni, 88.2 id,  0.0 wa,  0.0 hi,  2.1 si,  0.0 st 
+MiB Mem :   7751.7 total,   4351.9 free,   1724.8 used,   1897.7 buff/cache     
+MiB Swap:   2048.0 total,   2048.0 free,      0.0 used.   6026.8 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+  25629 iagora    20   0   17420  11540   7392 R  83.0   0.1   0:12.11 python3
+
+top - 17:23:28 up  1:01,  1 user,  load average: 2.51, 2.67, 2.14
+Tasks:   1 total,   1 running,   0 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  4.3 us,  6.0 sy,  0.0 ni, 87.2 id,  0.1 wa,  0.0 hi,  2.5 si,  0.0 st 
+MiB Mem :   7751.7 total,   4352.9 free,   1723.8 used,   1897.7 buff/cache     
+MiB Swap:   2048.0 total,   2048.0 free,      0.0 used.   6027.9 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+  25629 iagora    20   0   17420  11540   7392 R  84.0   0.1   0:12.95 python3
+
+top - 17:23:29 up  1:01,  1 user,  load average: 2.51, 2.67, 2.14
+Tasks:   1 total,   1 running,   0 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  3.8 us,  6.1 sy,  0.0 ni, 87.9 id,  0.0 wa,  0.0 hi,  2.2 si,  0.0 st 
+MiB Mem :   7751.7 total,   4352.9 free,   1723.8 used,   1897.7 buff/cache     
+MiB Swap:   2048.0 total,   2048.0 free,      0.0 used.   6027.9 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+  25629 iagora    20   0   17420  11540   7392 R  86.0   0.1   0:13.81 python3
+
+top - 17:23:30 up  1:01,  1 user,  load average: 2.51, 2.67, 2.14
+Tasks:   1 total,   1 running,   0 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  4.2 us,  6.0 sy,  0.0 ni, 87.5 id,  0.0 wa,  0.0 hi,  2.4 si,  0.0 st 
+MiB Mem :   7751.7 total,   4352.9 free,   1723.8 used,   1897.7 buff/cache     
+MiB Swap:   2048.0 total,   2048.0 free,      0.0 used.   6027.9 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+  25629 iagora    20   0   17420  11540   7392 R  85.0   0.1   0:14.66 python3
+
+top - 17:23:31 up  1:01,  1 user,  load average: 2.55, 2.68, 2.14
+Tasks:   1 total,   1 running,   0 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  4.2 us,  5.9 sy,  0.0 ni, 87.9 id,  0.0 wa,  0.0 hi,  2.0 si,  0.0 st 
+MiB Mem :   7751.7 total,   4353.9 free,   1722.7 used,   1897.8 buff/cache     
+MiB Swap:   2048.0 total,   2048.0 free,      0.0 used.   6028.9 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+  25629 iagora    20   0   17420  11540   7392 R  86.0   0.1   0:15.52 python3
+
+top - 17:23:32 up  1:01,  1 user,  load average: 2.55, 2.68, 2.14
+Tasks:   1 total,   1 running,   0 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  4.3 us,  5.8 sy,  0.0 ni, 88.1 id,  0.0 wa,  0.0 hi,  1.9 si,  0.0 st 
+MiB Mem :   7751.7 total,   4353.9 free,   1722.7 used,   1897.8 buff/cache     
+MiB Swap:   2048.0 total,   2048.0 free,      0.0 used.   6028.9 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+  25629 iagora    20   0   17420  11540   7392 R  82.2   0.1   0:16.35 python3
+
+top - 17:23:33 up  1:01,  1 user,  load average: 2.55, 2.68, 2.14
+Tasks:   1 total,   1 running,   0 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  3.6 us,  5.4 sy,  0.0 ni, 89.0 id,  0.0 wa,  0.0 hi,  1.9 si,  0.0 st 
+MiB Mem :   7751.7 total,   4353.9 free,   1722.7 used,   1897.8 buff/cache     
+MiB Swap:   2048.0 total,   2048.0 free,      0.0 used.   6028.9 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+  25629 iagora    20   0   17420  11540   7392 R  76.0   0.1   0:17.11 python3
+
+top - 17:23:34 up  1:01,  1 user,  load average: 2.55, 2.68, 2.14
+Tasks:   1 total,   1 running,   0 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  4.0 us,  5.9 sy,  0.0 ni, 87.9 id,  0.0 wa,  0.0 hi,  2.2 si,  0.0 st 
+MiB Mem :   7751.7 total,   4349.5 free,   1727.1 used,   1897.8 buff/cache     
+MiB Swap:   2048.0 total,   2048.0 free,      0.0 used.   6024.5 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+  25629 iagora    20   0   17420  11540   7392 R  80.0   0.1   0:17.91 python3
+
+top - 17:23:35 up  1:01,  1 user,  load average: 2.55, 2.68, 2.14
+Tasks:   1 total,   1 running,   0 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  4.2 us,  5.1 sy,  0.0 ni, 88.6 id,  0.1 wa,  0.0 hi,  2.0 si,  0.0 st 
+MiB Mem :   7751.7 total,   4349.5 free,   1727.1 used,   1897.8 buff/cache     
+MiB Swap:   2048.0 total,   2048.0 free,      0.0 used.   6024.5 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+  25629 iagora    20   0   17420  11540   7392 R  76.0   0.1   0:18.67 python3
+
+top - 17:23:36 up  1:01,  1 user,  load average: 2.50, 2.66, 2.14
+Tasks:   1 total,   1 running,   0 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  4.7 us,  5.1 sy,  0.0 ni, 88.4 id,  0.0 wa,  0.0 hi,  1.7 si,  0.0 st 
+MiB Mem :   7751.7 total,   4349.5 free,   1727.1 used,   1897.8 buff/cache     
+MiB Swap:   2048.0 total,   2048.0 free,      0.0 used.   6024.5 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+  25629 iagora    20   0   17420  11540   7392 R  76.0   0.1   0:19.43 python3
+
+top - 17:23:37 up  1:01,  1 user,  load average: 2.50, 2.66, 2.14
+Tasks:   1 total,   0 running,   1 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  4.1 us,  5.7 sy,  0.0 ni, 87.6 id,  0.0 wa,  0.0 hi,  2.6 si,  0.0 st 
+MiB Mem :   7751.7 total,   4352.6 free,   1724.0 used,   1897.9 buff/cache     
+MiB Swap:   2048.0 total,   2048.0 free,      0.0 used.   6027.7 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+  25629 iagora    20   0   17420  11540   7392 S  81.0   0.1   0:20.24 python3
+
+top - 17:23:38 up  1:01,  1 user,  load average: 2.50, 2.66, 2.14
+Tasks:   1 total,   1 running,   0 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  3.6 us,  6.1 sy,  0.0 ni, 87.8 id,  0.0 wa,  0.0 hi,  2.5 si,  0.0 st 
+MiB Mem :   7751.7 total,   4352.6 free,   1724.0 used,   1897.9 buff/cache     
+MiB Swap:   2048.0 total,   2048.0 free,      0.0 used.   6027.7 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+  25629 iagora    20   0   17420  11540   7392 R  83.0   0.1   0:21.07 python3
+
+top - 17:23:39 up  1:01,  1 user,  load average: 2.50, 2.66, 2.14
+Tasks:   1 total,   1 running,   0 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  4.0 us,  5.8 sy,  0.0 ni, 87.6 id,  0.0 wa,  0.0 hi,  2.5 si,  0.0 st 
+MiB Mem :   7751.7 total,   4352.6 free,   1724.0 used,   1897.9 buff/cache     
+MiB Swap:   2048.0 total,   2048.0 free,      0.0 used.   6027.7 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+  25629 iagora    20   0   17420  11540   7392 R  83.2   0.1   0:21.91 python3
+
+top - 17:23:40 up  1:01,  1 user,  load average: 2.50, 2.66, 2.14
+Tasks:   1 total,   0 running,   1 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  4.0 us,  5.8 sy,  0.0 ni, 88.1 id,  0.0 wa,  0.0 hi,  2.0 si,  0.0 st 
+MiB Mem :   7751.7 total,   4352.2 free,   1724.5 used,   1897.8 buff/cache     
+MiB Swap:   2048.0 total,   2048.0 free,      0.0 used.   6027.1 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+  25629 iagora    20   0   17420  11540   7392 S  84.0   0.1   0:22.75 python3
+
+top - 17:23:41 up  1:01,  1 user,  load average: 2.46, 2.65, 2.14
+Tasks:   1 total,   1 running,   0 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  4.1 us,  6.2 sy,  0.0 ni, 87.4 id,  0.0 wa,  0.0 hi,  2.2 si,  0.0 st 
+MiB Mem :   7751.7 total,   4352.2 free,   1724.5 used,   1897.8 buff/cache     
+MiB Swap:   2048.0 total,   2048.0 free,      0.0 used.   6027.1 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+  25629 iagora    20   0   17420  11540   7392 R  85.0   0.1   0:23.60 python3
+
+top - 17:23:42 up  1:01,  1 user,  load average: 2.46, 2.65, 2.14
+Tasks:   1 total,   1 running,   0 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  3.6 us,  6.2 sy,  0.0 ni, 87.7 id,  0.0 wa,  0.0 hi,  2.5 si,  0.0 st 
+MiB Mem :   7751.7 total,   4352.2 free,   1724.5 used,   1897.8 buff/cache     
+MiB Swap:   2048.0 total,   2048.0 free,      0.0 used.   6027.1 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+  25629 iagora    20   0   17420  11540   7392 R  85.0   0.1   0:24.45 python3
+
+top - 17:23:43 up  1:01,  1 user,  load average: 2.46, 2.65, 2.14
+Tasks:   1 total,   0 running,   1 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  4.0 us,  6.1 sy,  0.0 ni, 87.5 id,  0.1 wa,  0.0 hi,  2.4 si,  0.0 st 
+MiB Mem :   7751.7 total,   4349.7 free,   1727.0 used,   1897.7 buff/cache     
+MiB Swap:   2048.0 total,   2048.0 free,      0.0 used.   6024.7 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+  25629 iagora    20   0   17420  11540   7392 S  83.0   0.1   0:25.28 python3
+
+top - 17:23:44 up  1:01,  1 user,  load average: 2.46, 2.65, 2.14
+Tasks:   1 total,   0 running,   1 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  3.9 us,  5.7 sy,  0.0 ni, 88.4 id,  0.0 wa,  0.0 hi,  2.1 si,  0.0 st 
+MiB Mem :   7751.7 total,   4349.7 free,   1727.0 used,   1897.7 buff/cache     
+MiB Swap:   2048.0 total,   2048.0 free,      0.0 used.   6024.7 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+  25629 iagora    20   0   17420  11540   7392 S  83.0   0.1   0:26.11 python3
+
+top - 17:23:45 up  1:01,  1 user,  load average: 2.46, 2.65, 2.14
+Tasks:   1 total,   1 running,   0 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  4.1 us,  5.9 sy,  0.0 ni, 87.7 id,  0.0 wa,  0.0 hi,  2.3 si,  0.0 st 
+MiB Mem :   7751.7 total,   4349.7 free,   1727.0 used,   1897.7 buff/cache     
+MiB Swap:   2048.0 total,   2048.0 free,      0.0 used.   6024.7 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+  25629 iagora    20   0   17420  11540   7392 R  80.0   0.1   0:26.91 python3
+
+top - 17:23:46 up  1:01,  1 user,  load average: 2.43, 2.64, 2.14
+Tasks:   1 total,   1 running,   0 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  3.5 us,  6.5 sy,  0.0 ni, 88.0 id,  0.0 wa,  0.0 hi,  1.9 si,  0.0 st 
+MiB Mem :   7751.7 total,   4352.3 free,   1724.5 used,   1897.6 buff/cache     
+MiB Swap:   2048.0 total,   2048.0 free,      0.0 used.   6027.1 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+  25629 iagora    20   0   17420  11540   7392 R  81.2   0.1   0:27.73 python3
+
+top - 17:23:47 up  1:01,  1 user,  load average: 2.43, 2.64, 2.14
+Tasks:   1 total,   1 running,   0 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  4.1 us,  6.4 sy,  0.0 ni, 87.0 id,  0.0 wa,  0.0 hi,  2.5 si,  0.0 st 
+MiB Mem :   7751.7 total,   4352.3 free,   1724.5 used,   1897.6 buff/cache     
+MiB Swap:   2048.0 total,   2048.0 free,      0.0 used.   6027.1 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+  25629 iagora    20   0   17420  11540   7392 R  83.0   0.1   0:28.56 python3
+
+top - 17:23:48 up  1:01,  1 user,  load average: 2.43, 2.64, 2.14
+Tasks:   1 total,   0 running,   1 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  3.8 us,  5.7 sy,  0.0 ni, 88.2 id,  0.1 wa,  0.0 hi,  2.2 si,  0.0 st 
+MiB Mem :   7751.7 total,   4352.3 free,   1724.5 used,   1897.6 buff/cache     
+MiB Swap:   2048.0 total,   2048.0 free,      0.0 used.   6027.1 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+  25629 iagora    20   0   17420  11540   7392 S  81.0   0.1   0:29.37 python3
+
+top - 17:23:49 up  1:01,  1 user,  load average: 2.43, 2.64, 2.14
+Tasks:   1 total,   1 running,   0 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  4.1 us,  6.1 sy,  0.0 ni, 88.1 id,  0.0 wa,  0.0 hi,  1.7 si,  0.0 st 
+MiB Mem :   7751.7 total,   4346.2 free,   1730.4 used,   1897.9 buff/cache     
+MiB Swap:   2048.0 total,   2048.0 free,      0.0 used.   6021.2 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+  25629 iagora    20   0   17420  11540   7392 R  80.0   0.1   0:30.17 python3
+
+top - 17:23:50 up  1:01,  1 user,  load average: 2.43, 2.64, 2.14
+Tasks:   1 total,   1 running,   0 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  4.0 us,  5.9 sy,  0.0 ni, 88.1 id,  0.0 wa,  0.0 hi,  2.0 si,  0.0 st 
+MiB Mem :   7751.7 total,   4346.2 free,   1730.4 used,   1897.9 buff/cache     
+MiB Swap:   2048.0 total,   2048.0 free,      0.0 used.   6021.2 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+  25629 iagora    20   0   17420  11540   7392 R  82.0   0.1   0:30.99 python3
+
+top - 17:23:51 up  1:01,  1 user,  load average: 2.55, 2.67, 2.15
+Tasks:   1 total,   1 running,   0 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  4.7 us,  5.7 sy,  0.0 ni, 87.7 id,  0.0 wa,  0.0 hi,  1.9 si,  0.0 st 
+MiB Mem :   7751.7 total,   4346.2 free,   1730.4 used,   1897.9 buff/cache     
+MiB Swap:   2048.0 total,   2048.0 free,      0.0 used.   6021.2 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+  25629 iagora    20   0   17420  11540   7392 R  84.0   0.1   0:31.83 python3
+
+top - 17:23:52 up  1:01,  1 user,  load average: 2.55, 2.67, 2.15
+Tasks:   1 total,   1 running,   0 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  4.2 us,  5.3 sy,  0.0 ni, 87.8 id,  0.0 wa,  0.0 hi,  2.7 si,  0.0 st 
+MiB Mem :   7751.7 total,   4348.5 free,   1728.2 used,   1897.7 buff/cache     
+MiB Swap:   2048.0 total,   2048.0 free,      0.0 used.   6023.5 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+  25629 iagora    20   0   17420  11540   7392 R  81.0   0.1   0:32.64 python3
+
+top - 17:23:53 up  1:02,  1 user,  load average: 2.55, 2.67, 2.15
+Tasks:   1 total,   1 running,   0 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  4.4 us,  5.3 sy,  0.0 ni, 87.3 id,  0.0 wa,  0.0 hi,  3.0 si,  0.0 st 
+MiB Mem :   7751.7 total,   4348.5 free,   1728.2 used,   1897.7 buff/cache     
+MiB Swap:   2048.0 total,   2048.0 free,      0.0 used.   6023.5 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+  25629 iagora    20   0   17420  11540   7392 R  78.2   0.1   0:33.43 python3
+
+top - 17:23:54 up  1:02,  1 user,  load average: 2.55, 2.67, 2.15
+Tasks:   1 total,   1 running,   0 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  3.6 us,  5.1 sy,  0.0 ni, 89.6 id,  0.0 wa,  0.0 hi,  1.7 si,  0.0 st 
+MiB Mem :   7751.7 total,   4348.5 free,   1728.2 used,   1897.7 buff/cache     
+MiB Swap:   2048.0 total,   2048.0 free,      0.0 used.   6023.5 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+  25629 iagora    20   0   17420  11540   7392 R  71.0   0.1   0:34.14 python3
+
+top - 17:23:55 up  1:02,  1 user,  load average: 2.55, 2.67, 2.15
+Tasks:   1 total,   0 running,   1 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  4.2 us,  6.0 sy,  0.0 ni, 87.7 id,  0.0 wa,  0.0 hi,  2.1 si,  0.0 st 
+MiB Mem :   7751.7 total,   4350.4 free,   1726.2 used,   1897.8 buff/cache     
+MiB Swap:   2048.0 total,   2048.0 free,      0.0 used.   6025.4 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+  25629 iagora    20   0   17420  11540   7392 S  84.0   0.1   0:34.98 python3
+
+top - 17:23:56 up  1:02,  1 user,  load average: 2.67, 2.69, 2.16
+Tasks:   1 total,   1 running,   0 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  3.7 us,  5.6 sy,  0.0 ni, 88.2 id,  0.0 wa,  0.0 hi,  2.6 si,  0.0 st 
+MiB Mem :   7751.7 total,   4350.4 free,   1726.2 used,   1897.8 buff/cache     
+MiB Swap:   2048.0 total,   2048.0 free,      0.0 used.   6025.4 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+  25629 iagora    20   0   17420  11540   7392 R  81.0   0.1   0:35.79 python3
+
+top - 17:23:57 up  1:02,  1 user,  load average: 2.67, 2.69, 2.16
+Tasks:   1 total,   1 running,   0 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  4.3 us,  6.1 sy,  0.0 ni, 87.2 id,  0.0 wa,  0.0 hi,  2.4 si,  0.0 st 
+MiB Mem :   7751.7 total,   4350.4 free,   1726.2 used,   1897.8 buff/cache     
+MiB Swap:   2048.0 total,   2048.0 free,      0.0 used.   6025.4 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+  25629 iagora    20   0   17420  11540   7392 R  84.0   0.1   0:36.63 python3
+
+top - 17:23:58 up  1:02,  1 user,  load average: 2.67, 2.69, 2.16
+Tasks:   1 total,   1 running,   0 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  4.0 us,  5.9 sy,  0.0 ni, 87.8 id,  0.1 wa,  0.0 hi,  2.3 si,  0.0 st 
+MiB Mem :   7751.7 total,   4352.6 free,   1724.1 used,   1897.7 buff/cache     
+MiB Swap:   2048.0 total,   2048.0 free,      0.0 used.   6027.6 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+  25629 iagora    20   0   17420  11540   7392 R  83.0   0.1   0:37.46 python3
+
+top - 17:23:59 up  1:02,  1 user,  load average: 2.67, 2.69, 2.16
+Tasks:   1 total,   1 running,   0 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  4.0 us,  5.8 sy,  0.0 ni, 87.7 id,  0.0 wa,  0.0 hi,  2.6 si,  0.0 st 
+MiB Mem :   7751.7 total,   4352.6 free,   1724.1 used,   1897.7 buff/cache     
+MiB Swap:   2048.0 total,   2048.0 free,      0.0 used.   6027.6 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+  25629 iagora    20   0   17420  11540   7392 R  84.0   0.1   0:38.30 python3
+
+top - 17:24:00 up  1:02,  1 user,  load average: 2.67, 2.69, 2.16
+Tasks:   1 total,   1 running,   0 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  4.2 us,  5.4 sy,  0.0 ni, 88.0 id,  0.0 wa,  0.0 hi,  2.4 si,  0.0 st 
+MiB Mem :   7751.7 total,   4352.6 free,   1724.1 used,   1897.7 buff/cache     
+MiB Swap:   2048.0 total,   2048.0 free,      0.0 used.   6027.6 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+  25629 iagora    20   0   17420  11540   7392 R  85.1   0.1   0:39.16 python3
+
+top - 17:24:01 up  1:02,  1 user,  load average: 2.62, 2.68, 2.16
+Tasks:   1 total,   1 running,   0 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  4.1 us,  6.1 sy,  0.0 ni, 87.1 id,  0.0 wa,  0.0 hi,  2.7 si,  0.0 st 
+MiB Mem :   7751.7 total,   4349.3 free,   1727.4 used,   1897.8 buff/cache     
+MiB Swap:   2048.0 total,   2048.0 free,      0.0 used.   6024.2 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+  25629 iagora    20   0   17420  11540   7392 R  79.0   0.1   0:39.95 python3
+
+top - 17:24:02 up  1:02,  1 user,  load average: 2.62, 2.68, 2.16
+Tasks:   1 total,   1 running,   0 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  4.4 us,  5.6 sy,  0.0 ni, 87.8 id,  0.0 wa,  0.0 hi,  2.1 si,  0.0 st 
+MiB Mem :   7751.7 total,   4349.3 free,   1727.4 used,   1897.8 buff/cache     
+MiB Swap:   2048.0 total,   2048.0 free,      0.0 used.   6024.2 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+  25629 iagora    20   0   17420  11540   7392 R  81.0   0.1   0:40.76 python3
+
+top - 17:24:03 up  1:02,  1 user,  load average: 2.62, 2.68, 2.16
+Tasks:   1 total,   1 running,   0 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  4.5 us,  5.7 sy,  0.0 ni, 87.3 id,  0.0 wa,  0.0 hi,  2.5 si,  0.0 st 
+MiB Mem :   7751.7 total,   4349.3 free,   1727.4 used,   1897.8 buff/cache     
+MiB Swap:   2048.0 total,   2048.0 free,      0.0 used.   6024.2 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+  25629 iagora    20   0   17420  11540   7392 R  81.0   0.1   0:41.57 python3
+
+top - 17:24:04 up  1:02,  1 user,  load average: 2.62, 2.68, 2.16
+Tasks:   1 total,   0 running,   1 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  3.8 us,  5.0 sy,  0.0 ni, 89.4 id,  0.0 wa,  0.0 hi,  1.8 si,  0.0 st 
+MiB Mem :   7751.7 total,   4353.0 free,   1723.6 used,   1897.8 buff/cache     
+MiB Swap:   2048.0 total,   2048.0 free,      0.0 used.   6028.0 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+  25629 iagora    20   0   17420  11540   7392 S  72.0   0.1   0:42.29 python3
+
+top - 17:24:05 up  1:02,  1 user,  load average: 2.62, 2.68, 2.16
+Tasks:   1 total,   1 running,   0 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  4.3 us,  5.9 sy,  0.0 ni, 87.9 id,  0.0 wa,  0.0 hi,  1.9 si,  0.0 st 
+MiB Mem :   7751.7 total,   4353.0 free,   1723.6 used,   1897.8 buff/cache     
+MiB Swap:   2048.0 total,   2048.0 free,      0.0 used.   6028.0 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+  25629 iagora    20   0   17420  11540   7392 R  81.0   0.1   0:43.10 python3
+
+top - 17:24:06 up  1:02,  1 user,  load average: 2.57, 2.66, 2.16
+Tasks:   1 total,   1 running,   0 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  4.2 us,  5.5 sy,  0.0 ni, 88.1 id,  0.0 wa,  0.0 hi,  2.2 si,  0.0 st 
+MiB Mem :   7751.7 total,   4353.0 free,   1723.6 used,   1897.8 buff/cache     
+MiB Swap:   2048.0 total,   2048.0 free,      0.0 used.   6028.0 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+  25629 iagora    20   0   17420  11540   7392 R  81.0   0.1   0:43.91 python3
+
+top - 17:24:07 up  1:02,  1 user,  load average: 2.57, 2.66, 2.16
+Tasks:   1 total,   1 running,   0 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  6.7 us,  6.4 sy,  0.0 ni, 84.2 id,  0.1 wa,  0.0 hi,  2.7 si,  0.0 st 
+MiB Mem :   7751.7 total,   4314.6 free,   1762.1 used,   1897.7 buff/cache     
+MiB Swap:   2048.0 total,   2048.0 free,      0.0 used.   5989.5 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+  25629 iagora    20   0   17420  11540   7392 R  80.2   0.1   0:44.72 python3
+
+top - 17:24:08 up  1:02,  1 user,  load average: 2.57, 2.66, 2.16
+Tasks:   1 total,   1 running,   0 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  4.0 us,  5.8 sy,  0.0 ni, 87.8 id,  0.0 wa,  0.0 hi,  2.4 si,  0.0 st 
+MiB Mem :   7751.7 total,   4314.6 free,   1762.1 used,   1897.7 buff/cache     
+MiB Swap:   2048.0 total,   2048.0 free,      0.0 used.   5989.5 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+  25629 iagora    20   0   17420  11540   7392 R  83.0   0.1   0:45.55 python3
+
+top - 17:24:09 up  1:02,  1 user,  load average: 2.57, 2.66, 2.16
+Tasks:   1 total,   1 running,   0 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  4.2 us,  5.9 sy,  0.0 ni, 87.4 id,  0.0 wa,  0.0 hi,  2.5 si,  0.0 st 
+MiB Mem :   7751.7 total,   4314.6 free,   1762.1 used,   1897.7 buff/cache     
+MiB Swap:   2048.0 total,   2048.0 free,      0.0 used.   5989.5 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+  25629 iagora    20   0   17420  11540   7392 R  82.0   0.1   0:46.37 python3
+
+top - 17:24:10 up  1:02,  1 user,  load average: 2.57, 2.66, 2.16
+Tasks:   1 total,   0 running,   1 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  4.1 us,  5.6 sy,  0.0 ni, 88.1 id,  0.0 wa,  0.0 hi,  2.2 si,  0.0 st 
+MiB Mem :   7751.7 total,   4325.9 free,   1750.8 used,   1897.7 buff/cache     
+MiB Swap:   2048.0 total,   2048.0 free,      0.0 used.   6000.8 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+  25629 iagora    20   0   17420  11540   7392 S  84.0   0.1   0:47.21 python3
+
+top - 17:24:11 up  1:02,  1 user,  load average: 2.52, 2.65, 2.16
+Tasks:   1 total,   1 running,   0 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  4.4 us,  5.6 sy,  0.0 ni, 87.6 id,  0.0 wa,  0.0 hi,  2.4 si,  0.0 st 
+MiB Mem :   7751.7 total,   4325.9 free,   1750.8 used,   1897.7 buff/cache     
+MiB Swap:   2048.0 total,   2048.0 free,      0.0 used.   6000.8 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+  25629 iagora    20   0   17420  11540   7392 R  83.0   0.1   0:48.04 python3
+
+top - 17:24:12 up  1:02,  1 user,  load average: 2.52, 2.65, 2.16
+Tasks:   1 total,   1 running,   0 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  4.1 us,  5.5 sy,  0.0 ni, 88.2 id,  0.1 wa,  0.0 hi,  2.1 si,  0.0 st 
+MiB Mem :   7751.7 total,   4325.9 free,   1750.8 used,   1897.7 buff/cache     
+MiB Swap:   2048.0 total,   2048.0 free,      0.0 used.   6000.8 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+  25629 iagora    20   0   17420  11540   7392 R  81.0   0.1   0:48.85 python3
+
+top - 17:24:13 up  1:02,  1 user,  load average: 2.52, 2.65, 2.16
+Tasks:   1 total,   1 running,   0 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  4.4 us,  5.7 sy,  0.0 ni, 88.1 id,  0.0 wa,  0.0 hi,  1.8 si,  0.0 st 
+MiB Mem :   7751.7 total,   4332.1 free,   1744.7 used,   1897.6 buff/cache     
+MiB Swap:   2048.0 total,   2048.0 free,      0.0 used.   6006.9 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+  25629 iagora    20   0   17420  11540   7392 R  82.0   0.1   0:49.67 python3
+
+top - 17:24:14 up  1:02,  1 user,  load average: 2.52, 2.65, 2.16
+Tasks:   1 total,   1 running,   0 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  3.9 us,  5.2 sy,  0.0 ni, 88.9 id,  0.0 wa,  0.0 hi,  2.0 si,  0.0 st 
+MiB Mem :   7751.7 total,   4332.1 free,   1744.7 used,   1897.6 buff/cache     
+MiB Swap:   2048.0 total,   2048.0 free,      0.0 used.   6006.9 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+  25629 iagora    20   0   17420  11540   7392 R  75.2   0.1   0:50.43 python3
+
+top - 17:24:15 up  1:02,  1 user,  load average: 2.52, 2.65, 2.16
+Tasks:   1 total,   1 running,   0 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  3.7 us,  6.2 sy,  0.0 ni, 88.2 id,  0.0 wa,  0.0 hi,  1.9 si,  0.0 st 
+MiB Mem :   7751.7 total,   4332.1 free,   1744.7 used,   1897.6 buff/cache     
+MiB Swap:   2048.0 total,   2048.0 free,      0.0 used.   6006.9 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+  25629 iagora    20   0   17420  11540   7392 R  82.0   0.1   0:51.25 python3
+
+top - 17:24:16 up  1:02,  1 user,  load average: 2.40, 2.63, 2.15
+Tasks:   1 total,   1 running,   0 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  4.9 us,  5.2 sy,  0.0 ni, 87.9 id,  0.0 wa,  0.0 hi,  2.1 si,  0.0 st 
+MiB Mem :   7751.7 total,   4336.5 free,   1739.9 used,   1898.1 buff/cache     
+MiB Swap:   2048.0 total,   2048.0 free,      0.0 used.   6011.8 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+  25629 iagora    20   0   17420  11540   7392 R  80.0   0.1   0:52.05 python3
+
+top - 17:24:17 up  1:02,  1 user,  load average: 2.40, 2.63, 2.15
+Tasks:   1 total,   1 running,   0 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  3.8 us,  6.0 sy,  0.0 ni, 87.5 id,  0.3 wa,  0.0 hi,  2.4 si,  0.0 st 
+MiB Mem :   7751.7 total,   4336.5 free,   1739.9 used,   1898.1 buff/cache     
+MiB Swap:   2048.0 total,   2048.0 free,      0.0 used.   6011.8 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+  25629 iagora    20   0   17420  11540   7392 R  81.0   0.1   0:52.86 python3
+
+top - 17:24:18 up  1:02,  1 user,  load average: 2.40, 2.63, 2.15
+Tasks:   1 total,   1 running,   0 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  4.1 us,  5.7 sy,  0.0 ni, 87.8 id,  0.0 wa,  0.0 hi,  2.3 si,  0.0 st 
+MiB Mem :   7751.7 total,   4336.5 free,   1739.9 used,   1898.1 buff/cache     
+MiB Swap:   2048.0 total,   2048.0 free,      0.0 used.   6011.8 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+  25629 iagora    20   0   17420  11540   7392 R  83.0   0.1   0:53.69 python3
+
+top - 17:24:19 up  1:02,  1 user,  load average: 2.40, 2.63, 2.15
+Tasks:   1 total,   1 running,   0 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  4.1 us,  5.8 sy,  0.0 ni, 87.9 id,  0.0 wa,  0.0 hi,  2.2 si,  0.0 st 
+MiB Mem :   7751.7 total,   4341.6 free,   1734.9 used,   1897.9 buff/cache     
+MiB Swap:   2048.0 total,   2048.0 free,      0.0 used.   6016.8 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+  25629 iagora    20   0   17420  11540   7392 R  84.0   0.1   0:54.53 python3
+
+top - 17:24:20 up  1:02,  1 user,  load average: 2.40, 2.63, 2.15
+Tasks:   1 total,   1 running,   0 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  4.6 us,  5.2 sy,  0.0 ni, 87.3 id,  0.0 wa,  0.0 hi,  2.9 si,  0.0 st 
+MiB Mem :   7751.7 total,   4341.6 free,   1734.9 used,   1897.9 buff/cache     
+MiB Swap:   2048.0 total,   2048.0 free,      0.0 used.   6016.8 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+  25629 iagora    20   0   17420  11540   7392 R  86.0   0.1   0:55.39 python3
+
+top - 17:24:21 up  1:02,  1 user,  load average: 2.61, 2.67, 2.17
+Tasks:   1 total,   1 running,   0 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  4.1 us,  5.4 sy,  0.0 ni, 88.4 id,  0.0 wa,  0.0 hi,  2.1 si,  0.0 st 
+MiB Mem :   7751.7 total,   4341.6 free,   1734.9 used,   1897.9 buff/cache     
+MiB Swap:   2048.0 total,   2048.0 free,      0.0 used.   6016.8 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+  25629 iagora    20   0   17420  11540   7392 R  80.2   0.1   0:56.20 python3
+
+top - 17:24:22 up  1:02,  1 user,  load average: 2.61, 2.67, 2.17
+Tasks:   1 total,   1 running,   0 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  4.3 us,  6.0 sy,  0.0 ni, 87.4 id,  0.1 wa,  0.0 hi,  2.2 si,  0.0 st 
+MiB Mem :   7751.7 total,   4342.8 free,   1733.8 used,   1897.8 buff/cache     
+MiB Swap:   2048.0 total,   2048.0 free,      0.0 used.   6017.8 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+  25629 iagora    20   0   17420  11540   7392 R  82.0   0.1   0:57.02 python3
+
+top - 17:24:23 up  1:02,  1 user,  load average: 2.61, 2.67, 2.17
+Tasks:   1 total,   1 running,   0 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  4.6 us,  5.3 sy,  0.0 ni, 87.9 id,  0.0 wa,  0.0 hi,  2.2 si,  0.0 st 
+MiB Mem :   7751.7 total,   4342.8 free,   1733.8 used,   1897.8 buff/cache     
+MiB Swap:   2048.0 total,   2048.0 free,      0.0 used.   6017.8 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+  25629 iagora    20   0   17420  11540   7392 R  82.0   0.1   0:57.84 python3
+
+top - 17:24:24 up  1:02,  1 user,  load average: 2.61, 2.67, 2.17
+Tasks:   1 total,   0 running,   1 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  3.7 us,  5.5 sy,  0.0 ni, 88.6 id,  0.0 wa,  0.0 hi,  2.2 si,  0.0 st 
+MiB Mem :   7751.7 total,   4342.8 free,   1733.8 used,   1897.8 buff/cache     
+MiB Swap:   2048.0 total,   2048.0 free,      0.0 used.   6017.8 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+  25629 iagora    20   0   17420  11540   7392 S  75.0   0.1   0:58.59 python3
+
+top - 17:24:25 up  1:02,  1 user,  load average: 2.61, 2.67, 2.17
+Tasks:   1 total,   1 running,   0 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  3.9 us,  6.0 sy,  0.0 ni, 87.8 id,  0.0 wa,  0.0 hi,  2.4 si,  0.0 st 
+MiB Mem :   7751.7 total,   4345.6 free,   1730.7 used,   1898.1 buff/cache     
+MiB Swap:   2048.0 total,   2048.0 free,      0.0 used.   6020.9 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+  25629 iagora    20   0   17420  11540   7392 R  86.0   0.1   0:59.45 python3
+
+top - 17:24:26 up  1:02,  1 user,  load average: 2.56, 2.65, 2.16
+Tasks:   1 total,   1 running,   0 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  3.8 us,  6.5 sy,  0.0 ni, 87.3 id,  0.0 wa,  0.0 hi,  2.3 si,  0.0 st 
+MiB Mem :   7751.7 total,   4345.6 free,   1730.7 used,   1898.1 buff/cache     
+MiB Swap:   2048.0 total,   2048.0 free,      0.0 used.   6020.9 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+  25629 iagora    20   0   17420  11540   7392 R  83.0   0.1   1:00.28 python3
+
+top - 17:24:27 up  1:02,  1 user,  load average: 2.56, 2.65, 2.16
+Tasks:   1 total,   0 running,   1 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  3.9 us,  5.8 sy,  0.0 ni, 87.8 id,  0.1 wa,  0.0 hi,  2.4 si,  0.0 st 
+MiB Mem :   7751.7 total,   4345.6 free,   1730.7 used,   1898.1 buff/cache     
+MiB Swap:   2048.0 total,   2048.0 free,      0.0 used.   6020.9 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+  25629 iagora    20   0   17420  11540   7392 S  87.0   0.1   1:01.15 python3
+
+top - 17:24:28 up  1:02,  1 user,  load average: 2.56, 2.65, 2.16
+Tasks:   1 total,   1 running,   0 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  6.4 us,  5.8 sy,  0.0 ni, 85.5 id,  0.0 wa,  0.0 hi,  2.3 si,  0.0 st 
+MiB Mem :   7751.7 total,   4346.7 free,   1729.6 used,   1898.2 buff/cache     
+MiB Swap:   2048.0 total,   2048.0 free,      0.0 used.   6022.1 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+  25629 iagora    20   0   17420  11540   7392 R  84.2   0.1   1:02.00 python3
+
+top - 17:24:29 up  1:02,  1 user,  load average: 2.56, 2.65, 2.16
+Tasks:   1 total,   1 running,   0 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  4.2 us,  6.1 sy,  0.0 ni, 87.6 id,  0.0 wa,  0.0 hi,  2.2 si,  0.0 st 
+MiB Mem :   7751.7 total,   4346.7 free,   1729.6 used,   1898.2 buff/cache     
+MiB Swap:   2048.0 total,   2048.0 free,      0.0 used.   6022.1 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+  25629 iagora    20   0   17420  11540   7392 R  86.0   0.1   1:02.86 python3
+
+top - 17:24:30 up  1:02,  1 user,  load average: 2.56, 2.65, 2.16
+Tasks:   1 total,   1 running,   0 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  4.3 us,  6.2 sy,  0.0 ni, 87.1 id,  0.0 wa,  0.0 hi,  2.4 si,  0.0 st 
+MiB Mem :   7751.7 total,   4346.7 free,   1729.6 used,   1898.2 buff/cache     
+MiB Swap:   2048.0 total,   2048.0 free,      0.0 used.   6022.1 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+  25629 iagora    20   0   17420  11540   7392 R  86.0   0.1   1:03.72 python3
+
+top - 17:24:31 up  1:02,  1 user,  load average: 2.51, 2.64, 2.16
+Tasks:   1 total,   1 running,   0 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  4.0 us,  5.8 sy,  0.0 ni, 88.2 id,  0.0 wa,  0.0 hi,  2.0 si,  0.0 st 
+MiB Mem :   7751.7 total,   4349.1 free,   1727.4 used,   1897.9 buff/cache     
+MiB Swap:   2048.0 total,   2048.0 free,      0.0 used.   6024.2 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+  25629 iagora    20   0   17420  11540   7392 R  83.0   0.1   1:04.55 python3
+
+top - 17:24:32 up  1:02,  1 user,  load average: 2.51, 2.64, 2.16
+Tasks:   1 total,   1 running,   0 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  4.5 us,  6.4 sy,  0.0 ni, 87.1 id,  0.0 wa,  0.0 hi,  2.0 si,  0.0 st 
+MiB Mem :   7751.7 total,   4349.1 free,   1727.4 used,   1897.9 buff/cache     
+MiB Swap:   2048.0 total,   2048.0 free,      0.0 used.   6024.2 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+  25629 iagora    20   0   17420  11540   7392 R  84.0   0.1   1:05.39 python3
+
+top - 17:24:33 up  1:02,  1 user,  load average: 2.51, 2.64, 2.16
+Tasks:   1 total,   1 running,   0 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  3.4 us,  6.4 sy,  0.0 ni, 87.8 id,  0.0 wa,  0.0 hi,  2.4 si,  0.0 st 
+MiB Mem :   7751.7 total,   4349.1 free,   1727.4 used,   1897.9 buff/cache     
+MiB Swap:   2048.0 total,   2048.0 free,      0.0 used.   6024.2 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+  25629 iagora    20   0   17420  11540   7392 R  84.0   0.1   1:06.23 python3
+
+top - 17:24:34 up  1:02,  1 user,  load average: 2.51, 2.64, 2.16
+Tasks:   1 total,   1 running,   0 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  3.7 us,  5.6 sy,  0.0 ni, 88.9 id,  0.0 wa,  0.0 hi,  1.8 si,  0.0 st 
+MiB Mem :   7751.7 total,   4348.2 free,   1728.3 used,   1897.9 buff/cache     
+MiB Swap:   2048.0 total,   2048.0 free,      0.0 used.   6023.4 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+  25629 iagora    20   0   17420  11540   7392 R  73.0   0.1   1:06.96 python3
+
+top - 17:24:35 up  1:02,  1 user,  load average: 2.51, 2.64, 2.16
+Tasks:   1 total,   1 running,   0 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  3.8 us,  5.9 sy,  0.0 ni, 87.6 id,  0.0 wa,  0.0 hi,  2.7 si,  0.0 st 
+MiB Mem :   7751.7 total,   4348.2 free,   1728.3 used,   1897.9 buff/cache     
+MiB Swap:   2048.0 total,   2048.0 free,      0.0 used.   6023.4 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+  25629 iagora    20   0   17420  11540   7392 R  85.1   0.1   1:07.82 python3
+
+top - 17:24:36 up  1:02,  1 user,  load average: 2.47, 2.63, 2.16
+Tasks:   1 total,   1 running,   0 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  4.2 us,  6.0 sy,  0.0 ni, 87.6 id,  0.0 wa,  0.0 hi,  2.2 si,  0.0 st 
+MiB Mem :   7751.7 total,   4348.2 free,   1728.3 used,   1897.9 buff/cache     
+MiB Swap:   2048.0 total,   2048.0 free,      0.0 used.   6023.4 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+  25629 iagora    20   0   17420  11540   7392 R  84.0   0.1   1:08.66 python3
+
+top - 17:24:37 up  1:02,  1 user,  load average: 2.47, 2.63, 2.16
+Tasks:   1 total,   1 running,   0 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  3.6 us,  6.0 sy,  0.0 ni, 88.0 id,  0.0 wa,  0.0 hi,  2.4 si,  0.0 st 
+MiB Mem :   7751.7 total,   4351.5 free,   1725.1 used,   1897.9 buff/cache     
+MiB Swap:   2048.0 total,   2048.0 free,      0.0 used.   6026.6 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+  25629 iagora    20   0   17420  11540   7392 R  82.0   0.1   1:09.48 python3
+
+top - 17:24:38 up  1:02,  1 user,  load average: 2.47, 2.63, 2.16
+Tasks:   1 total,   1 running,   0 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  4.2 us,  6.0 sy,  0.0 ni, 87.3 id,  0.0 wa,  0.0 hi,  2.6 si,  0.0 st 
+MiB Mem :   7751.7 total,   4351.5 free,   1725.1 used,   1897.9 buff/cache     
+MiB Swap:   2048.0 total,   2048.0 free,      0.0 used.   6026.6 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+  25629 iagora    20   0   17420  11540   7392 R  80.0   0.1   1:10.28 python3
+
+top - 17:24:39 up  1:02,  1 user,  load average: 2.47, 2.63, 2.16
+Tasks:   1 total,   0 running,   1 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  4.0 us,  5.7 sy,  0.0 ni, 88.2 id,  0.0 wa,  0.0 hi,  2.1 si,  0.0 st 
+MiB Mem :   7751.7 total,   4351.5 free,   1725.1 used,   1897.9 buff/cache     
+MiB Swap:   2048.0 total,   2048.0 free,      0.0 used.   6026.6 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+  25629 iagora    20   0   17420  11540   7392 S  82.0   0.1   1:11.10 python3
+
+top - 17:24:40 up  1:02,  1 user,  load average: 2.47, 2.63, 2.16
+Tasks:   1 total,   1 running,   0 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  3.9 us,  6.0 sy,  0.0 ni, 87.7 id,  0.0 wa,  0.0 hi,  2.4 si,  0.0 st 
+MiB Mem :   7751.7 total,   4348.5 free,   1728.4 used,   1897.6 buff/cache     
+MiB Swap:   2048.0 total,   2048.0 free,      0.0 used.   6023.3 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+  25629 iagora    20   0   17420  11540   7392 R  82.0   0.1   1:11.92 python3
+
+top - 17:24:41 up  1:02,  1 user,  load average: 2.43, 2.62, 2.16
+Tasks:   1 total,   1 running,   0 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  4.1 us,  5.7 sy,  0.0 ni, 88.2 id,  0.0 wa,  0.0 hi,  2.1 si,  0.0 st 
+MiB Mem :   7751.7 total,   4348.5 free,   1728.4 used,   1897.6 buff/cache     
+MiB Swap:   2048.0 total,   2048.0 free,      0.0 used.   6023.3 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+  25629 iagora    20   0   17420  11540   7392 R  82.0   0.1   1:12.74 python3
+
+top - 17:24:42 up  1:02,  1 user,  load average: 2.43, 2.62, 2.16
+Tasks:   1 total,   1 running,   0 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  4.2 us,  5.7 sy,  0.0 ni, 87.2 id,  0.0 wa,  0.0 hi,  2.9 si,  0.0 st 
+MiB Mem :   7751.7 total,   4348.5 free,   1728.4 used,   1897.6 buff/cache     
+MiB Swap:   2048.0 total,   2048.0 free,      0.0 used.   6023.3 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+  25629 iagora    20   0   17420  11540   7392 R  82.2   0.1   1:13.57 python3
+
+top - 17:24:43 up  1:02,  1 user,  load average: 2.43, 2.62, 2.16
+Tasks:   1 total,   1 running,   0 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  3.7 us,  6.2 sy,  0.0 ni, 87.9 id,  0.1 wa,  0.0 hi,  2.1 si,  0.0 st 
+MiB Mem :   7751.7 total,   4345.8 free,   1731.0 used,   1897.7 buff/cache     
+MiB Swap:   2048.0 total,   2048.0 free,      0.0 used.   6020.7 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+  25629 iagora    20   0   17420  11540   7392 R  82.0   0.1   1:14.39 python3
+
+top - 17:24:44 up  1:02,  1 user,  load average: 2.43, 2.62, 2.16
+Tasks:   1 total,   1 running,   0 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  3.7 us,  5.7 sy,  0.0 ni, 88.5 id,  0.0 wa,  0.0 hi,  2.1 si,  0.0 st 
+MiB Mem :   7751.7 total,   4345.8 free,   1731.0 used,   1897.7 buff/cache     
+MiB Swap:   2048.0 total,   2048.0 free,      0.0 used.   6020.7 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+  25629 iagora    20   0   17420  11540   7392 R  74.0   0.1   1:15.13 python3
+
+top - 17:24:45 up  1:02,  1 user,  load average: 2.43, 2.62, 2.16
+Tasks:   1 total,   1 running,   0 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  5.0 us,  5.1 sy,  0.0 ni, 87.8 id,  0.0 wa,  0.0 hi,  2.2 si,  0.0 st 
+MiB Mem :   7751.7 total,   4345.8 free,   1731.0 used,   1897.7 buff/cache     
+MiB Swap:   2048.0 total,   2048.0 free,      0.0 used.   6020.7 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+  25629 iagora    20   0   17420  11540   7392 R  84.0   0.1   1:15.97 python3
+
+top - 17:24:46 up  1:02,  1 user,  load average: 2.40, 2.61, 2.16
+Tasks:   1 total,   1 running,   0 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  4.0 us,  5.8 sy,  0.0 ni, 87.4 id,  0.0 wa,  0.0 hi,  2.8 si,  0.0 st 
+MiB Mem :   7751.7 total,   4343.7 free,   1732.8 used,   1898.0 buff/cache     
+MiB Swap:   2048.0 total,   2048.0 free,      0.0 used.   6018.9 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+  25629 iagora    20   0   17420  11540   7392 R  83.0   0.1   1:16.80 python3
+
+top - 17:24:47 up  1:02,  1 user,  load average: 2.40, 2.61, 2.16
+Tasks:   1 total,   1 running,   0 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  4.1 us,  5.6 sy,  0.0 ni, 87.6 id,  0.0 wa,  0.0 hi,  2.7 si,  0.0 st 
+MiB Mem :   7751.7 total,   4343.7 free,   1732.8 used,   1898.0 buff/cache     
+MiB Swap:   2048.0 total,   2048.0 free,      0.0 used.   6018.9 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+  25629 iagora    20   0   17420  11540   7392 R  82.0   0.1   1:17.62 python3
+
+top - 17:24:48 up  1:02,  1 user,  load average: 2.40, 2.61, 2.16
+Tasks:   1 total,   1 running,   0 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  4.2 us,  6.3 sy,  0.0 ni, 86.7 id,  0.4 wa,  0.0 hi,  2.4 si,  0.0 st 
+MiB Mem :   7751.7 total,   4343.7 free,   1732.8 used,   1898.0 buff/cache     
+MiB Swap:   2048.0 total,   2048.0 free,      0.0 used.   6018.9 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+  25629 iagora    20   0   17420  11540   7392 R  81.2   0.1   1:18.44 python3
+
+top - 17:24:49 up  1:02,  1 user,  load average: 2.40, 2.61, 2.16
+Tasks:   1 total,   1 running,   0 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  3.7 us,  6.3 sy,  0.0 ni, 87.9 id,  0.0 wa,  0.0 hi,  2.2 si,  0.0 st 
+MiB Mem :   7751.7 total,   4352.9 free,   1723.6 used,   1897.9 buff/cache     
+MiB Swap:   2048.0 total,   2048.0 free,      0.0 used.   6028.0 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+  25629 iagora    20   0   17420  11540   7392 R  84.0   0.1   1:19.28 python3
+
+top - 17:24:50 up  1:02,  1 user,  load average: 2.40, 2.61, 2.16
+Tasks:   1 total,   1 running,   0 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  4.1 us,  5.7 sy,  0.0 ni, 88.0 id,  0.0 wa,  0.0 hi,  2.2 si,  0.0 st 
+MiB Mem :   7751.7 total,   4352.9 free,   1723.6 used,   1897.9 buff/cache     
+MiB Swap:   2048.0 total,   2048.0 free,      0.0 used.   6028.0 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+  25629 iagora    20   0   17420  11540   7392 R  86.0   0.1   1:20.14 python3
+
+top - 17:24:51 up  1:02,  1 user,  load average: 2.37, 2.60, 2.16
+Tasks:   1 total,   0 running,   1 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  4.1 us,  6.2 sy,  0.0 ni, 87.6 id,  0.0 wa,  0.0 hi,  2.1 si,  0.0 st 
+MiB Mem :   7751.7 total,   4352.9 free,   1723.6 used,   1897.9 buff/cache     
+MiB Swap:   2048.0 total,   2048.0 free,      0.0 used.   6028.0 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+  25629 iagora    20   0   17420  11540   7392 S  82.0   0.1   1:20.96 python3
+
+top - 17:24:52 up  1:02,  1 user,  load average: 2.37, 2.60, 2.16
+Tasks:   1 total,   1 running,   0 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  4.3 us,  5.4 sy,  0.0 ni, 88.3 id,  0.0 wa,  0.0 hi,  2.1 si,  0.0 st 
+MiB Mem :   7751.7 total,   4352.5 free,   1724.1 used,   1897.9 buff/cache     
+MiB Swap:   2048.0 total,   2048.0 free,      0.0 used.   6027.5 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+  25629 iagora    20   0   17420  11540   7392 R  85.0   0.1   1:21.81 python3
+
+top - 17:24:53 up  1:03,  1 user,  load average: 2.37, 2.60, 2.16
+Tasks:   1 total,   1 running,   0 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  4.8 us,  5.2 sy,  0.0 ni, 87.8 id,  0.0 wa,  0.0 hi,  2.2 si,  0.0 st 
+MiB Mem :   7751.7 total,   4352.5 free,   1724.1 used,   1897.9 buff/cache     
+MiB Swap:   2048.0 total,   2048.0 free,      0.0 used.   6027.5 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+  25629 iagora    20   0   17420  11540   7392 R  82.0   0.1   1:22.63 python3

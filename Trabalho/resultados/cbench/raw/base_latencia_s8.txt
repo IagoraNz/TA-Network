@@ -1,0 +1,13 @@
+$ cbench -c 127.0.0.1 -p 6653 -m 10000 -l 10 -s 8
+cbench: controller benchmarking tool
+   running in mode 'latency'
+   connecting to controller at 127.0.0.1:6653 
+   faking 8 switches offset 1 :: 10 tests each; 10000 ms per test
+   with 100000 unique source MACs per switch
+   learning destination mac addresses before the test
+   starting test with 0 ms delay after features_reply
+   ignoring first 1 "warmup" and last 0 "cooldown" loops
+   connection delay of 0ms per 1 switch(es)
+   debugging info is off
+make_tcp_connection: connect: Operation now in progress
+make_nonblock_tcp_connection :: returned -1

@@ -1,0 +1,44 @@
+=== Controlador SDN Didático v2 (OpenFlow 1.0 / Hub) ===
+Iniciando servidor socket TCP em 0.0.0.0:6653...
+Aguardando conexões dos switches (porta 6653)...
+
+[18:11:37.768] [+] Conexão TCP estabelecida com o switch: 127.0.0.1:40994
+[18:11:37.769]     <<< HELLO de 127.0.0.1:40994 (xid=166)
+[18:11:37.769]     >>> FEATURES_REQUEST para 127.0.0.1:40994
+[18:11:37.770]     <<< FEATURES_REPLY: DPID=0000000000000004 buffers=0 tabelas=254 portas=6 (1.08 ms)
+[18:11:37.770] [OK] Handshake concluído com DPID 4 (1 switch(es) conectado(s))
+[18:11:37.770] [+] Conexão TCP estabelecida com o switch: 127.0.0.1:41008
+[18:11:37.770]     <<< HELLO de 127.0.0.1:41008 (xid=167)
+[18:11:37.770]     >>> FEATURES_REQUEST para 127.0.0.1:41008
+[18:11:38.270]     <<< FEATURES_REPLY: DPID=0000000000000001 buffers=0 tabelas=254 portas=5 (500.43 ms)
+[18:11:38.270] [OK] Handshake concluído com DPID 1 (2 switch(es) conectado(s))
+[18:11:38.270] [+] Conexão TCP estabelecida com o switch: 127.0.0.1:41024
+[18:11:38.270]     <<< HELLO de 127.0.0.1:41024 (xid=168)
+[18:11:38.270]     >>> FEATURES_REQUEST para 127.0.0.1:41024
+[18:11:38.770]     <<< FEATURES_REPLY: DPID=0000000000000003 buffers=0 tabelas=254 portas=6 (499.88 ms)
+[18:11:38.770] [OK] Handshake concluído com DPID 3 (3 switch(es) conectado(s))
+[18:11:38.770] [STATS] switches=3 packet_in/s=0 msgs/s=0
+[18:11:38.770] [+] Conexão TCP estabelecida com o switch: 127.0.0.1:41040
+[18:11:38.770]     <<< HELLO de 127.0.0.1:41040 (xid=169)
+[18:11:38.770] [ERRO] Handshake falhou com ('127.0.0.1', 41040): [Errno 32] Broken pipe
+[18:11:38.770] [+] Conexão TCP estabelecida com o switch: 127.0.0.1:41044
+[18:11:38.770]     <<< HELLO de 127.0.0.1:41044 (xid=170)
+[18:11:38.770] [ERRO] Handshake falhou com ('127.0.0.1', 41044): [Errno 32] Broken pipe
+[18:11:39.771] [STATS] switches=3 packet_in/s=0 msgs/s=0
+[18:11:39.773] [+] Conexão TCP estabelecida com o switch: 127.0.0.1:41056
+[18:11:39.773]     <<< HELLO de 127.0.0.1:41056 (xid=171)
+[18:11:39.773]     >>> FEATURES_REQUEST para 127.0.0.1:41056
+[18:11:40.272]     <<< FEATURES_REPLY: DPID=0000000000000005 buffers=0 tabelas=254 portas=6 (499.71 ms)
+[18:11:40.272] [OK] Handshake concluído com DPID 5 (4 switch(es) conectado(s))
+[18:11:40.273] [+] Conexão TCP estabelecida com o switch: 127.0.0.1:41072
+[18:11:40.273]     <<< HELLO de 127.0.0.1:41072 (xid=172)
+[18:11:40.273]     >>> FEATURES_REQUEST para 127.0.0.1:41072
+[18:11:40.773]     <<< FEATURES_REPLY: DPID=0000000000000002 buffers=0 tabelas=254 portas=6 (500.79 ms)
+[18:11:40.773] [OK] Handshake concluído com DPID 2 (5 switch(es) conectado(s))
+[18:11:40.773] [STATS] switches=5 packet_in/s=0 msgs/s=0
+[18:11:41.775] [STATS] switches=5 packet_in/s=0 msgs/s=0
+[18:11:42.191] [-] Switch DPID 4 desconectado: Conexão encerrada pelo switch.
+[18:11:42.192] [-] Switch DPID 1 desconectado: Conexão encerrada pelo switch.
+[18:11:42.192] [-] Switch DPID 3 desconectado: Conexão encerrada pelo switch.
+[18:11:42.192] [-] Switch DPID 5 desconectado: Conexão encerrada pelo switch.
+[18:11:42.192] [-] Switch DPID 2 desconectado: Conexão encerrada pelo switch.

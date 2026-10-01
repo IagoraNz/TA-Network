@@ -1,0 +1,57 @@
+=== Controlador SDN Didático v2 (OpenFlow 1.0 / Hub) ===
+Iniciando servidor socket TCP em 0.0.0.0:6653...
+Aguardando conexões dos switches (porta 6653)...
+
+[18:13:04.266] [+] Conexão TCP estabelecida com o switch: 127.0.0.1:59814
+[18:13:04.266]     <<< HELLO de 127.0.0.1:59814 (xid=254)
+[18:13:04.266]     >>> FEATURES_REQUEST para 127.0.0.1:59814
+[18:13:04.267]     <<< FEATURES_REPLY: DPID=0000000000000001 buffers=0 tabelas=254 portas=3 (1.70 ms)
+[18:13:04.267] [OK] Handshake concluído com DPID 1 (1 switch(es) conectado(s))
+[18:13:04.267] [+] Conexão TCP estabelecida com o switch: 127.0.0.1:59818
+[18:13:04.268]     <<< HELLO de 127.0.0.1:59818 (xid=255)
+[18:13:04.268]     >>> FEATURES_REQUEST para 127.0.0.1:59818
+[18:13:04.290]     <<< FEATURES_REPLY: DPID=0000000000000006 buffers=0 tabelas=254 portas=4 (22.20 ms)
+[18:13:04.290] [OK] Handshake concluído com DPID 6 (2 switch(es) conectado(s))
+[18:13:04.290] [+] Conexão TCP estabelecida com o switch: 127.0.0.1:59830
+[18:13:04.290]     <<< HELLO de 127.0.0.1:59830 (xid=256)
+[18:13:04.290]     >>> FEATURES_REQUEST para 127.0.0.1:59830
+[18:13:04.291]     <<< FEATURES_REPLY: DPID=0000000000000003 buffers=0 tabelas=254 portas=4 (0.72 ms)
+[18:13:04.291] [OK] Handshake concluído com DPID 3 (3 switch(es) conectado(s))
+[18:13:04.291] [+] Conexão TCP estabelecida com o switch: 127.0.0.1:59842
+[18:13:04.291]     <<< HELLO de 127.0.0.1:59842 (xid=257)
+[18:13:04.291]     >>> FEATURES_REQUEST para 127.0.0.1:59842
+[18:13:04.292]     <<< FEATURES_REPLY: DPID=0000000000000002 buffers=0 tabelas=254 portas=4 (1.46 ms)
+[18:13:04.292] [OK] Handshake concluído com DPID 2 (4 switch(es) conectado(s))
+[18:13:04.292] [+] Conexão TCP estabelecida com o switch: 127.0.0.1:59858
+[18:13:04.293]     <<< HELLO de 127.0.0.1:59858 (xid=258)
+[18:13:04.293]     >>> FEATURES_REQUEST para 127.0.0.1:59858
+[18:13:04.354]     <<< FEATURES_REPLY: DPID=0000000000000008 buffers=0 tabelas=254 portas=3 (61.34 ms)
+[18:13:04.354] [OK] Handshake concluído com DPID 8 (5 switch(es) conectado(s))
+[18:13:04.354] [+] Conexão TCP estabelecida com o switch: 127.0.0.1:59866
+[18:13:04.354]     <<< HELLO de 127.0.0.1:59866 (xid=259)
+[18:13:04.354]     >>> FEATURES_REQUEST para 127.0.0.1:59866
+[18:13:04.355]     <<< FEATURES_REPLY: DPID=0000000000000007 buffers=0 tabelas=254 portas=4 (0.56 ms)
+[18:13:04.355] [OK] Handshake concluído com DPID 7 (6 switch(es) conectado(s))
+[18:13:04.355] [+] Conexão TCP estabelecida com o switch: 127.0.0.1:59876
+[18:13:04.355]     <<< HELLO de 127.0.0.1:59876 (xid=260)
+[18:13:04.355]     >>> FEATURES_REQUEST para 127.0.0.1:59876
+[18:13:04.356]     <<< FEATURES_REPLY: DPID=0000000000000004 buffers=0 tabelas=254 portas=4 (0.74 ms)
+[18:13:04.356] [OK] Handshake concluído com DPID 4 (7 switch(es) conectado(s))
+[18:13:05.209] [STATS] switches=7 packet_in/s=73 msgs/s=73
+[18:13:05.282] [+] Conexão TCP estabelecida com o switch: 127.0.0.1:59888
+[18:13:05.285]     <<< HELLO de 127.0.0.1:59888 (xid=261)
+[18:13:05.285]     >>> FEATURES_REQUEST para 127.0.0.1:59888
+[18:13:05.287]     <<< FEATURES_REPLY: DPID=0000000000000005 buffers=0 tabelas=254 portas=4 (5.17 ms)
+[18:13:05.287] [OK] Handshake concluído com DPID 5 (8 switch(es) conectado(s))
+[18:13:06.211] [STATS] switches=8 packet_in/s=116 msgs/s=116
+[18:13:07.211] [STATS] switches=8 packet_in/s=14 msgs/s=14
+[18:13:08.212] [STATS] switches=8 packet_in/s=0 msgs/s=0
+[18:13:09.214] [STATS] switches=8 packet_in/s=8 msgs/s=8
+[18:13:09.273] [-] Switch DPID 1 desconectado: Conexão encerrada pelo switch.
+[18:13:09.273] [-] Switch DPID 6 desconectado: Conexão encerrada pelo switch.
+[18:13:09.273] [-] Switch DPID 3 desconectado: Conexão encerrada pelo switch.
+[18:13:09.273] [-] Switch DPID 2 desconectado: Conexão encerrada pelo switch.
+[18:13:09.273] [-] Switch DPID 8 desconectado: Conexão encerrada pelo switch.
+[18:13:09.273] [-] Switch DPID 7 desconectado: Conexão encerrada pelo switch.
+[18:13:09.273] [-] Switch DPID 4 desconectado: Conexão encerrada pelo switch.
+[18:13:09.273] [-] Switch DPID 5 desconectado: Conexão encerrada pelo switch.

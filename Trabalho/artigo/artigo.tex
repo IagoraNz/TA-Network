@@ -1,0 +1,519 @@
+% Esqueleto do artigo (modelo SBC) com a estrutura exigida na Primeira Avaliação.
+% Os trechos em vermelho (\todo) indicam o que cada seção precisa conter e de onde
+% vêm os números; remova-os à medida que o texto for escrito.
+% Compilar: cd artigo && latexmk -pdf artigo.tex
+\documentclass[12pt]{article}
+
+\usepackage{sbc-template}
+\usepackage{graphicx,url}
+\usepackage[brazil]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{xcolor}
+\usepackage{booktabs}
+\usepackage[hidelinks]{hyperref}
+
+\sloppy
+
+\newcommand{\todo}[1]{\textcolor{red}{[#1]}}
+% Inclui a figura se ela já foi gerada; senão, mostra o comando que a gera.
+\newcommand{\figura}[2]{\IfFileExists{figuras/#1.pdf}%
+  {\includegraphics[width=#2]{figuras/#1.pdf}}%
+  {\fbox{\parbox{.8\textwidth}{\centering\todo{figuras/\detokenize{#1}.pdf ainda não gerada --
+   veja o README do projeto}}}}}
+
+\title{Análise Experimental de Desempenho e Exaustão\\de um Controlador SDN Baseado em Sockets TCP}
+
+\author{Iago Roberto Esmério Almeida}
+
+\address{Programa de Pós-Graduação em Ciência da Computação (PPGCC)\\
+  Universidade Federal do Piauí (UFPI) -- Teresina, PI -- Brasil
+  \email{iago.almeida@ufpi.edu.br}
+}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+We stress a minimalist single-threaded OpenFlow~1.0 controller written in Python over
+TCP sockets, with polling and a synchronous handshake, using Mininet
+(\texttt{tree,depth=2,fanout=4}) and cbench. Concurrent connections raise handshake
+latency to 4.3\,s with 16 switches; under PACKET\_IN flooding it saturates at about
+30 thousand messages/s with CPU above 97\% and up to 100\% loss; cbench peaks at
+108 thousand responses/s and fails with eight switches. Of three concurrent
+refactorings, all remove the connection bottleneck, but only \texttt{selectors}-based
+I/O multiplexing also improves latency-mode throughput, which explains why frameworks
+such as Ryu are asynchronous and event-driven. Video: \todo{public link}.
+\end{abstract}
+
+\begin{resumo}
+Este trabalho estressa um controlador OpenFlow~1.0 minimalista em Python, com uma
+thread, \textit{polling} e handshake síncrono sobre sockets TCP, usando o Mininet
+(\texttt{tree,depth=2,fanout=4}) e o cbench. Conexões simultâneas elevam a latência de
+handshake a 4,3\,s com 16 switches; sob inundação de PACKET\_IN, o controlador satura em
+cerca de 30 mil mensagens/s, com CPU acima de 97\% e perda de até 100\%; no cbench,
+atinge 108 mil respostas/s e falha com oito switches. Das três refatorações concorrentes,
+todas eliminam o gargalo de conexão, mas só a multiplexação de E/S com \texttt{selectors}
+também melhora a vazão no modo latência, o que explica por que frameworks como o Ryu são
+assíncronos e orientados a eventos. Vídeo: \todo{link público}.
+\end{resumo}
+
+% ======================================================================
+\section{Introdução}
+\label{sec:introducao}
+As Redes Definidas por Software (\textit{Software-Defined Networking}, SDN) separam o
+plano de dados, responsável pelo encaminhamento de pacotes nos switches, do plano de
+controle, que passa a ser exercido por um software logicamente centralizado, o
+controlador \cite{kreutz2015sdn}. A comunicação entre os dois planos segue um protocolo
+aberto, sendo o OpenFlow o mais difundido \cite{mckeown2008openflow,onf2009of10}: o
+switch abre uma conexão TCP com o controlador, ambos negociam a versão do protocolo
+(HELLO) e as capacidades do switch (FEATURES\_REQUEST/FEATURES\_REPLY) e, a partir daí,
+todo pacote sem regra correspondente na tabela de fluxos (\textit{table-miss}) é
+encaminhado ao controlador em uma mensagem PACKET\_IN, que decide o que fazer com ele,
+por exemplo, com um PACKET\_OUT ou com a instalação de uma regra (FLOW\_MOD).
+
+Essa centralização tem um custo: o controlador entra no caminho crítico de cada novo
+fluxo, e sua capacidade de processar mensagens passa a limitar o desempenho de toda a
+rede. Não por acaso, a vazão de PACKET\_IN por segundo e a latência de resposta tornaram-se
+as métricas usuais de comparação entre controladores
+\cite{tootoonchian2012controller,erickson2013beacon,zhu2019benchmarking}, e os
+controladores de produção, como Beacon \cite{erickson2013beacon},
+OpenDaylight \cite{medved2014odl}, ONOS \cite{berde2014onos} e Ryu \cite{ryu}, investem
+em E/S assíncrona, processamento em lote e paralelismo para sustentar milhares de
+switches e milhões de eventos por segundo.
+
+Este trabalho estuda o extremo oposto desse espectro: o \texttt{Controlador-v2.py}, um
+controlador didático de cerca de 230 linhas em Python puro que implementa o OpenFlow~1.0
+diretamente sobre sockets TCP. Sua arquitetura é propositalmente minimalista: uma única
+thread; um laço que varre sockets não bloqueantes por \textit{polling}, sem
+\texttt{select}, \texttt{selectors} ou \texttt{asyncio}; um handshake síncrono dentro
+desse laço, de modo que, enquanto um switch negocia, nenhum outro é atendido; uma função
+\texttt{recv\_exact()} que gira em espera ocupada até completar cada mensagem; e um
+comportamento de \textit{hub}, que responde a todo PACKET\_IN com um PACKET\_OUT de
+inundação sem instalar regras. Assim, todo pacote da rede gera PACKET\_IN em cada switch
+do caminho, e o plano de controle se torna o gargalo por construção.
+
+O objetivo deste artigo é submeter esse controlador a testes de estresse e de exaustão
+e quantificar seus limites de vazão, uso de CPU, perda e latência, usando o Mininet
+\cite{lantz2010mininet} com Open vSwitch \cite{pfaff2015ovs} na topologia
+\texttt{tree,depth=2,fanout=4} e o cbench, em quatro experimentos: (i) handshake com
+conexões simultâneas; (ii) inundação de PACKET\_IN, incluindo o \texttt{ping -f}; (iii)
+vazão bruta no cbench; e (iv) avaliação de três refatorações concorrentes, com
+\texttt{selectors}, threads e \texttt{asyncio}. As contribuições são uma metodologia
+reprodutível, com dados brutos preservados; a ligação de cada sintoma medido ao trecho
+de código responsável; e a medição das três refatorações, incluindo os casos em que a
+mudança de arquitetura não melhora o desempenho. A Seção~\ref{sec:metodologia} descreve
+o ambiente e a metodologia; a Seção~\ref{sec:resultados} discute os resultados; a
+Seção~\ref{sec:refatoracao} detalha as refatorações; e a Seção~\ref{sec:conclusao}
+conclui o trabalho.
+
+% ======================================================================
+\section{Metodologia e Setup Experimental}
+\label{sec:metodologia}
+
+\textbf{Ambiente.} Todos os experimentos rodaram em uma única máquina
+(Tabela~\ref{tab:ambiente}), com controlador, Mininet, Open vSwitch e cbench
+comunicando-se pela interface de \textit{loopback}. Como o Linux executa sobre o WSL2,
+uma máquina virtual leve do Windows, os valores absolutos valem como referência deste
+ambiente, e as conclusões se apoiam sobretudo em comparações relativas feitas nas
+mesmas condições.
+
+\begin{table}[!htb]
+\centering
+\caption{Ambiente experimental (registrado por \texttt{experimentos/ambiente.sh}).}
+\label{tab:ambiente}
+\small
+\begin{tabular}{@{}ll@{}}
+\toprule
+Componente & Versão / configuração \\
+\midrule
+Processador & Intel Core i5-12500H (12ª geração), 8 núcleos e 16 threads visíveis \\
+Memória e sistema & 7,6\,GiB; Ubuntu 26.04 LTS sobre WSL2, kernel Linux 6.18 \\
+Python & 3.14.4, com GIL habilitado; sem \texttt{uvloop} \\
+Emulação & Mininet 2.3.0 e Open vSwitch 3.7.1 (OpenFlow 1.0) \\
+Medição & cbench, tcpdump 4.99.6 e \texttt{top} (procps-ng 4.0.4) \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\textbf{Topologia e controladores.} A topologia \texttt{tree,depth=2,fanout=4} tem um
+switch raiz ligado a quatro switches de borda, cada um com quatro hosts: 5 switches
+Open vSwitch e 16 hosts (h1 a h16), com OpenFlow~1.0 e controlador remoto em
+\texttt{127.0.0.1:6653}. O controlador base é usado sem modificações; as três
+refatorações (Seção~\ref{sec:refatoracao}) têm exatamente o mesmo comportamento de
+\textit{hub}, de modo que as diferenças medidas decorrem só da arquitetura. O
+Experimento~2 usa o controlador no modo padrão, que imprime uma linha por PACKET\_IN, como
+na demonstração; os demais usam \texttt{-{}-quiet}, para medir a arquitetura e não a
+escrita no terminal. O controlador base registra a cada segundo uma linha
+\texttt{[STATS]} com os PACKET\_IN processados.
+
+\textbf{Instrumentação.} A CPU de cada processo é amostrada a cada 0,5\,s em
+\texttt{/proc/<pid>/stat} (tempo de usuário mais sistema), a mesma grandeza do
+\texttt{top}, em percentual de um núcleo; em paralelo, \texttt{top -b -d 1 -p <pid>}
+grava a saída do \texttt{top}. As fases de cada experimento são marcadas no tempo, e nas
+médias por fase descarta-se 1\,s em cada borda. Antes de cada execução, os scripts
+abortam se já houver um processo escutando a porta 6653 e só prosseguem quando o
+controlador iniciado está escutando; essa verificação foi introduzida porque, em uma
+execução preliminar, um processo remanescente respondeu no lugar do controlador sob
+teste, e aquelas medições foram descartadas.
+
+\textbf{Experimento 1.} No cenário do enunciado, o controlador base é iniciado e, em
+seguida, a árvore, registrando-se o log do controlador (5 rodadas). No comparativo, N
+switches (N $\in$ \{1, 2, 4, 5, 8, 16\}; N\,=\,5 em árvore e os demais em cadeia, o que
+não afeta o handshake) são criados sem controlador; o controlador é iniciado, o tcpdump
+captura a porta 6653 e uma única transação \texttt{ovs-vsctl} aponta todos os switches
+para ele, provocando conexões simultâneas (5 rodadas por controlador e por N). Da
+captura extraem-se, por switch, a \emph{latência total} (do primeiro SYN da rodada ao
+FEATURES\_REPLY do switch, incluindo reconexões) e o \emph{atraso do HELLO} (do SYN da
+conexão bem-sucedida ao primeiro byte enviado pelo controlador), que isola o tempo de
+espera para ser atendido; contam-se também SYNs e conexões abortadas.
+
+\textbf{Experimento 2.} O roteiro do enunciado (10\,s ocioso, \texttt{pingall},
+\texttt{h1 ping -f h16} por 30\,s) é executado com monitoramento da CPU do controlador e
+do \texttt{ovs-vswitchd} e do estado das conexões. Como o \texttt{ping -f} adapta sua taxa
+às respostas, a curva de saturação usa injeção em taxa fixa: após um \texttt{pingall},
+14 patamares de 15\,s (pausas de 3\,s), de 200 a 20\,000 ICMP/s nominais, distribuídos
+entre os pares h$i$\,$\rightarrow$\,h$(17-i)$ com até 200 requisições/s por processo
+\texttt{ping -i}.
+
+\textbf{Experimentos 3 e 4.} O cbench emula switches que enviam PACKET\_IN (100\,000 MACs
+de origem por switch) e mede as respostas; no modo latência (padrão) cada switch mantém
+uma requisição pendente, e no modo \textit{throughput} (\texttt{-t}) envia sem esperar.
+Usa-se o comando do enunciado, \texttt{cbench -c 127.0.0.1 -p 6653 -m 10000 -l 10 -s <S>}:
+10 laços de 10\,s, dos quais o primeiro é aquecimento, de modo que média e desvio-padrão
+vêm de 9 laços. Uma única bateria alimenta os dois experimentos: CPU em repouso de cada
+controlador (10\,s), modo latência com S $\in$ \{1, 2, 4, 5, 6, 7, 8, 16\} (S\,=\,8 é o
+caso do enunciado) e modo \textit{throughput} com S $\in$ \{7, 8\}.
+
+% ======================================================================
+\section{Resultados Experimentais e Discussão}
+\label{sec:resultados}
+
+\subsection{Experimento 1: handshake com múltiplas conexões}
+\label{sec:exp1}
+\textbf{Inicialização da rede.} Nas 5 rodadas, o \texttt{Controlador-v2.py} concluiu o
+handshake com os 5 switches da árvore. O terminal mostra um comportamento estritamente
+sequencial: para cada switch aparece a conexão TCP, o HELLO recebido, o
+FEATURES\_REQUEST enviado e o FEATURES\_REPLY com o DPID e o número de portas, e só
+então a conexão seguinte é aceita (trecho abaixo, rodada 1). Cada handshake levou entre
+1,9 e 3,9\,ms, com cerca de 11\,ms entre um switch e o próximo, e os 5 ficaram conectados
+em aproximadamente 50\,ms. Mensagens que chegam durante a negociação, como o
+PORT\_STATUS do switch 5, são descartadas (``ignorada durante o handshake''). Logo em
+seguida começa o fluxo de PACKET\_IN gerado pelo tráfego IPv6 de descoberta de vizinhos
+dos hosts. A primeira linha ``[ERRO] Handshake falhou'' de cada log não é um switch: é a
+sonda com que o Mininet verifica se a porta do controlador está aberta.
+
+{\footnotesize
+\begin{verbatim}
+[18:17:40.902] [+] Conexão TCP estabelecida com o switch: 127.0.0.1:60952
+[18:17:40.902]     <<< HELLO de 127.0.0.1:60952 (xid=807)
+[18:17:40.902]     >>> FEATURES_REQUEST para 127.0.0.1:60952
+[18:17:40.905]     <<< FEATURES_REPLY: DPID=0000000000000001 ... portas=5 (3.90 ms)
+[18:17:40.906] [OK] Handshake concluído com DPID 1 (1 switch(es) conectado(s))
+...
+[18:17:40.952] [OK] Handshake concluído com DPID 5 (5 switch(es) conectado(s))
+\end{verbatim}
+}
+
+Nesse cenário o atraso é pequeno porque o Mininet cria os switches um após o outro. O
+gargalo aparece quando as conexões chegam juntas, como mostra a
+Figura~\ref{fig:exp1}. Com o controlador base, a latência total de handshake cresce de
+0,3\,s com 1 switch para 1,1\,s com 5 e 4,3\,s com 16, e o atraso até o controlador
+enviar o HELLO, que mede apenas a espera para ser atendido, passa de 0,8\,ms para
+cerca de 400\,ms (N\,=\,4 a 8) e 1,06\,s (N\,=\,16). Com 16 switches, observam-se em média
+42,4 SYNs e 9,2 conexões abortadas pelos switches por rodada: as conexões que esperam
+demais são desfeitas pelo Open vSwitch e refeitas após um intervalo de espera. Nas três
+refatorações, nenhuma conexão foi abortada, o número de SYNs igualou o de switches e o
+atraso do HELLO ficou abaixo de 1,2\,ms (\texttt{selectors} e \texttt{asyncio}) e de
+9\,ms (threads, que precisa criar uma thread por conexão). A latência total de 100 a
+260\,ms das threads, o valor de 0,3\,s do base com um único switch e o pico isolado do
+\texttt{asyncio} em N\,=\,5 vêm do próprio Open vSwitch: as capturas mostram o controlador
+enviando o FEATURES\_REQUEST em menos de 1\,ms e o switch respondendo em degraus de
+cerca de 100 ou 500\,ms.
+
+\begin{figure}[!htb]
+\centering
+\figura{exp1_handshake}{.92\textwidth}
+\caption{Experimento 1: (a) latência total de handshake e (b) maior atraso do HELLO do
+controlador por rodada, em função do número de switches que conectam simultaneamente
+(média $\pm$ desvio-padrão de 5 rodadas; N\,=\,5 usa a topologia em árvore).}
+\label{fig:exp1}
+\end{figure}
+
+\textbf{Gargalo.} O atraso nasce no laço principal do controlador base, que executa
+\texttt{accept()} e, em seguida, \texttt{handshake()} de forma síncrona: enquanto espera
+o HELLO e o FEATURES\_REPLY de um switch, \texttt{recv\_exact()} gira em espera ocupada
+sobre um socket não bloqueante e nenhuma outra conexão é aceita ou atendida. As
+conexões seguintes ficam na fila de \texttt{accept} do kernel, limitada por
+\texttt{listen(5)}; quando ela enche, novos SYNs deixam de ser respondidos e o cliente
+precisa retransmiti-los, o que explica os SYNs excedentes e os atrasos de segundos.
+Um switch lento ou malicioso que não responda ao FEATURES\_REQUEST bloqueia o
+controlador inteiro.
+
+\subsection{Experimento 2: estresse de table-miss via PACKET\_IN}
+No roteiro do enunciado (Figura~\ref{fig:exp2}a), o \texttt{pingall} terminou sem perda
+em 3,6\,s. Durante os 30\,s de \texttt{h1 ping -f h16}, a CPU do controlador ficou em 23\%
+em média, com máximo de 30\% nas amostras de \texttt{/proc} e de 27\% no \texttt{top},
+contra 7,5\% em ociosidade, processando cerca de 1,5 mil PACKET\_IN/s; o
+\texttt{ovs-vswitchd} ficou em torno de 45\%. O \texttt{ping -f} enviou 3\,389 pacotes,
+com perda de 0,03\% (um pacote) e RTT médio de 8,7\,ms (máximo de 30\,ms). Os 5 switches
+permaneceram conectados, sem nenhum evento de desconexão no log do Open vSwitch. A CPU não
+chega a 100\% porque o \texttt{ping -f} é autorregulado: só envia um novo pacote quando a
+resposta anterior chega ou a cada 10\,ms, e a passagem de cada pacote pelo controlador em
+três switches impõe um RTT de 8,7\,ms, o que limita a carga a cerca de 113 pacotes/s. Ou
+seja, a própria lentidão do controlador limita a carga oferecida, e levá-lo à exaustão
+exige injeção em taxa fixa.
+
+A Figura~\ref{fig:exp2}b mostra a curva de saturação com o controlador no modo padrão.
+Cada ICMP enviado gera cerca de 10 PACKET\_IN, porque o \textit{hub} não instala regras:
+a requisição e a resposta passam por três switches (borda, raiz e borda) e cada cópia
+inundada que chega a outro switch volta ao controlador. Até 2,6 mil ICMP/s (26 mil
+PACKET\_IN/s) não há perda relevante, mas a CPU sobe de 22\% para 79\%. A partir de
+3,2 mil ICMP/s a CPU passa de 97\% e a vazão do controlador estabiliza entre 29 e 32 mil
+PACKET\_IN/s; o excedente se acumula nas filas, o RTT médio sobe de 9\,ms para 1,4\,s e a
+perda cresce de 20\% até 100\% com cerca de 6 mil ICMP/s. Mesmo assim, os 5 switches
+permaneceram conectados em todos os patamares: o controlador continua respondendo aos
+ECHO\_REQUEST, pois os atende no mesmo laço, e a degradação aparece como perda e
+latência, não como desconexão.
+
+\begin{figure}[!htb]
+\centering
+\begin{minipage}[t]{.49\textwidth}\centering
+\figura{exp2_ping_flood}{\textwidth}\\{\footnotesize (a) roteiro do enunciado}
+\end{minipage}\hfill
+\begin{minipage}[t]{.49\textwidth}\centering
+\figura{exp2_saturacao}{\textwidth}\\{\footnotesize (b) curva de saturação}
+\end{minipage}
+\caption{Experimento 2: (a) \%CPU do controlador e do ovs-vswitchd durante
+\texttt{pingall} e \texttt{h1 ping -f h16}; (b) \%CPU, perda de ICMP e PACKET\_IN/s
+processados por taxa de ICMP enviada (patamares de 15\,s).}
+\label{fig:exp2}
+\end{figure}
+
+\textbf{\texttt{recv\_exact()} e \texttt{struct.unpack()}.} Para cada PACKET\_IN, o
+controlador base faz uma chamada \texttt{recv(8)} para o cabeçalho e outra, via
+\texttt{recv\_exact()}, para o corpo; decodifica o cabeçalho e o corpo com
+\texttt{struct.unpack()}; monta o PACKET\_OUT com três \texttt{struct.pack()} e
+concatenações; imprime uma linha de log; e envia com \texttt{sendall()}. A
+Tabela~\ref{tab:micro} mostra o custo medido de cada etapa. Ao contrário do que se
+poderia supor, a decodificação com \texttt{struct.unpack()} custa pouco (130 a 185\,ns,
+pois o módulo mantém em cache as strings de formato) e responde por cerca de 1\% dos
+$\approx$33\,$\mu$s gastos por PACKET\_IN na saturação. O que limita a vazão é a E/S: as
+duas syscalls de leitura e a de escrita por mensagem custam 3,4\,$\mu$s, contra
+63\,ns por mensagem quando um único \texttt{recv} traz 64 mensagens; e cada volta vazia
+do \textit{polling} custa 1,8\,$\mu$s, porque gera uma exceção \texttt{BlockingIOError}.
+Como o laço varre todos os switches a cada iteração, cada mensagem útil paga também as
+voltas vazias dos sockets ociosos. Além disso, quando uma mensagem chega fragmentada,
+\texttt{recv\_exact()} gira até completá-la sem atender mais nenhum switch, de modo que
+a vazão total fica limitada pelo switch mais lento. Por fim, o \texttt{print} por mensagem
+(0,9\,$\mu$s mais a escrita no terminal) é síncrono e está no caminho crítico.
+
+\begin{table}[!htb]
+\centering
+\caption{Custo por operação no laço de PACKET\_IN (\texttt{microbench.py}, mínimo de 5 repetições).}
+\label{tab:micro}
+\small
+\begin{tabular}{@{}lr@{}}
+\toprule
+Operação & Custo (ns) \\
+\midrule
+\texttt{struct.unpack('!BBHI')} do cabeçalho & 127 \\
+\texttt{struct.unpack('!IHHBx')} do corpo do PACKET\_IN & 185 \\
+3 $\times$ \texttt{struct.pack} + concatenação do PACKET\_OUT & 689 \\
+Formatação e \texttt{print} do log por PACKET\_IN & 945 \\
+\texttt{send} + 2 $\times$ \texttt{recv} (enquadramento do controlador base) & 3\,361 \\
+\texttt{send} + 1 $\times$ \texttt{recv} de 64 mensagens, por mensagem & 63 \\
+\texttt{recv()} sem dados $\rightarrow$ \texttt{BlockingIOError} (uma volta do polling) & 1\,842 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{Experimento 3: vazão bruta com o cbench}
+\label{sec:exp3}
+Com o comando do enunciado (\texttt{-s 8}), o cbench não consegue estabelecer as
+conexões e encerra sem medir vazão, resultado que se repetiu em todas as execuções:
+
+{\footnotesize
+\begin{verbatim}
+$ cbench -c 127.0.0.1 -p 6653 -m 10000 -l 10 -s 8
+   ...
+   faking 8 switches offset 1 :: 10 tests each; 10000 ms per test
+make_tcp_connection: connect: Operation now in progress
+make_nonblock_tcp_connection :: returned -1
+\end{verbatim}
+}
+
+\noindent O cbench abre as conexões com \texttt{connect()} não bloqueante e trata como
+erro uma conexão que não se completa de imediato. Como o controlador base negocia um
+switch por vez e a fila de \texttt{accept} é limitada por \texttt{listen(5)}, a oitava
+conexão simultânea fica pendente e o teste aborta; com 7 switches o teste sempre
+completa. Durante a tentativa, a CPU do controlador chega a 100\%, consumida pela espera
+ocupada do handshake. A maior vazão registrada foi, portanto, obtida com 7 switches:
+108\,255 $\pm$ 2\,215 respostas/s em média (máximo de 111\,192 em um laço):
+
+{\footnotesize
+\begin{verbatim}
+RESULT: 7 switches 9 tests min/max/avg/stdev =
+        104967.88/111191.79/108255.45/2214.54 responses/s
+\end{verbatim}
+}
+
+\noindent A Figura~\ref{fig:exp3} mostra que a vazão é estável ao longo dos laços e cresce
+de 30 mil (1 switch) para 108 mil respostas/s (7 switches), com a CPU indo de 33\% a 87\%:
+com mais switches, cada volta do laço encontra mais mensagens prontas e desperdiça menos
+voltas vazias. No modo \textit{throughput} (\texttt{-t}), em que os switches não esperam
+resposta, a vazão cai para 47\,214 respostas/s com 7 switches e CPU de 99,8\%.
+
+\begin{figure}[!htb]
+\centering
+\figura{exp3_cbench}{.92\textwidth}
+\caption{Experimento 3: vazão do controlador base no cbench (\texttt{-m 10000 -l 10}) por
+laço de teste (a) e média $\pm$ desvio-padrão com \%CPU (b), por número de switches emulados.}
+\label{fig:exp3}
+\end{figure}
+
+\textbf{Comparação com controladores de produção.} Em medições com o cbench publicadas
+para o modo \textit{throughput}, com 64 switches e uma única thread, o Beacon atingiu
+1,35 milhão de respostas/s, o NOX 828 mil, o Maestro 420 mil e o Floodlight 135 mil,
+enquanto os controladores em Python, POX e Ryu, ficaram em 35 mil e 20 mil; com 12
+núcleos, o Beacon chegou a 12,8 milhões \cite{erickson2013beacon}. Em outra comparação,
+ONOS respondeu a 400--500 fluxos/ms (400--500 mil/s), OpenDaylight e Beacon a até
+100 mil/s, e NOX, POX e Ryu ficaram entre os piores \cite{zhu2019benchmarking}. Hardware, versões e aplicações diferem, o que impede comparar os valores
+diretamente, mas a diferença de escala é clara: o controlador base sustenta 47 mil
+respostas/s no modo \textit{throughput} e não aceita sequer 8 switches, enquanto os
+controladores de produção atendem dezenas de switches e escalam com o número de núcleos.
+Os fatores que justificam a diferença são: (i) Python interpretado e o GIL, que impede
+paralelismo real de CPU entre threads \cite{beazley2010gil}; (ii) uma única thread, sem
+uso de múltiplos núcleos; (iii) handshake síncrono e \texttt{listen(5)}, que limitam o
+número de conexões; (iv) várias syscalls por mensagem, sem leitura nem escrita em lote,
+justamente a otimização que levou o Beacon a 1,35 milhão de respostas/s
+\cite{erickson2013beacon}; (v) \textit{polling} com espera ocupada, cujo custo cresce
+com o número de switches; e (vi) log síncrono no caminho crítico. Como a aplicação é
+trivial (um \textit{hub}), a diferença vem da arquitetura, e não da lógica de controle.
+
+\subsection{Experimento 4: avaliação das refatorações}
+\label{sec:exp4}
+A Tabela~\ref{tab:exp4} e a Figura~\ref{fig:exp4} comparam o controlador base às três
+refatorações (Seção~\ref{sec:refatoracao}) nas mesmas condições. Todas resolvem os
+problemas de conexão: aceitam 8 e 16 switches no cbench, negociam handshakes
+concorrentes em milissegundos (Seção~\ref{sec:exp1}) e não consomem CPU em repouso,
+contra 2,5\% do base, que desperta a cada 1\,ms para varrer os sockets. No modo
+\textit{throughput}, as três passam de 970 mil respostas/s com 8 switches, mais de 20
+vezes o que o base alcança com 7, porque cada \texttt{recv} de 64\,KiB traz dezenas de
+mensagens, que são respondidas em um único \texttt{send}.
+
+\begin{table}[!htb]
+\centering
+\caption{Experimento 4: vazão no cbench (respostas/s, média de 9 laços) e \%CPU.}
+\label{tab:exp4}
+\small
+\begin{tabular}{@{}lrrrrrrr@{}}
+\toprule
+& \multicolumn{4}{c}{Modo latência (\texttt{-s})} & Modo \texttt{-t} & \multicolumn{2}{c}{CPU (\%)} \\
+\cmidrule(lr){2-5}\cmidrule(lr){6-6}\cmidrule(l){7-8}
+Controlador & 1 & 7 & 8 & 16 & 8 & repouso & carga (s\,=\,7) \\
+\midrule
+Base (síncrono) & 30\,292 & 108\,255 & falha & falha & falha & 2,5 & 87 \\
+Refat. 1 (\texttt{selectors}) & 28\,965 & 122\,984 & 126\,458 & 125\,386 & 1\,068\,896 & 0,0 & 97 \\
+Refat. 2 (threads) & 19\,647 & 10\,088 & 9\,819 & 8\,764 & 1\,096\,346 & 0,0 & 153 \\
+Refat. 3 (\texttt{asyncio}) & 11\,772 & 19\,709 & 20\,647 & 21\,168 & 970\,569 & 0,0 & 98 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{figure}[!htb]
+\centering
+\begin{minipage}[t]{.49\textwidth}\centering
+\figura{exp4_vazao_cbench}{\textwidth}\\{\footnotesize (a) modo latência}
+\end{minipage}\hfill
+\begin{minipage}[t]{.49\textwidth}\centering
+\figura{exp4_throughput}{\textwidth}\\{\footnotesize (b) modo \textit{throughput} (\texttt{-t})}
+\end{minipage}
+\caption{Experimento 4: vazão no cbench do controlador base e das três refatorações.}
+\label{fig:exp4}
+\end{figure}
+
+No modo latência, que é o do enunciado, o resultado depende da arquitetura. Só a
+refatoração com \texttt{selectors} supera o base em todos os casos: 14\% a mais com 7
+switches e cerca de 125 mil respostas/s com 8 e 16 switches, que o base não suporta. A
+versão com threads cai para cerca de 10 mil respostas/s a partir de 4 switches, com
+CPU acima de 150\%: como cada switch tem uma única mensagem pendente, cada resposta
+exige que o GIL passe de uma thread a outra, e o tempo se perde nessa disputa
+\cite{beazley2010gil}. A versão com \texttt{asyncio} fica entre 12 e 21 mil
+respostas/s, com a CPU saturada: sem mensagens acumuladas para processar em lote, o
+custo fixo do \textit{event loop} por mensagem (callbacks, \textit{futures} e a troca de
+tarefa entre leitor e despachante) domina.
+
+% ======================================================================
+\section{Proposta de Refatoração Arquitetural}
+\label{sec:refatoracao}
+As três propostas foram implementadas e medidas
+(Seção~\ref{sec:exp4}). Elas mantêm o comportamento do controlador base e
+compartilham um módulo OpenFlow~1.0 (\texttt{of10.py}) com duas mudanças que atacam os
+gargalos da Seção~\ref{sec:resultados}. A primeira é o enquadramento sobre buffer: em
+vez de \texttt{recv\_exact()}, cada conexão acumula o que chega em um
+\texttt{bytearray} e extrai todas as mensagens completas de uma vez, de modo que um
+único \texttt{recv(65536)} entrega dezenas de PACKET\_IN e uma mensagem incompleta
+simplesmente aguarda o próximo evento, sem espera ocupada. A segunda é o envio
+agregado: as respostas de um lote são concatenadas e enviadas em uma única chamada.
+O PACKET\_OUT também passa a ser montado em um só \texttt{pack}.
+
+
+\textbf{Refatoração 1: multiplexação de E/S com \texttt{selectors}.} O laço de
+\textit{polling} é substituído por \texttt{selector.select()}, que usa o epoll do Linux
+e bloqueia no kernel até que algum socket tenha dados, eliminando a espera ocupada e o
+custo das voltas vazias. O handshake deixa de ser síncrono e vira uma máquina de estados
+por conexão: ao aceitar, o controlador apenas enfileira seu HELLO; o FEATURES\_REQUEST
+é enviado quando chega o HELLO do switch, e o DPID é registrado quando chega o
+FEATURES\_REPLY, sem que um switch bloqueie outro. Cada conexão tem buffers de leitura e
+de escrita, e a leitura é suspensa quando há mais de 1\,MiB pendente para envio
+(\textit{backpressure}). O backlog passa a 128.
+
+\textbf{Refatoração 2: uma thread por switch.} A thread principal executa apenas
+\texttt{accept()} bloqueante e entrega cada conexão a uma thread dedicada, que usa
+\texttt{recv()} bloqueante com o enquadramento sobre buffer. Os handshakes ocorrem em
+paralelo e um switch lento afeta só a sua thread; enquanto não há dados, a thread dorme
+no kernel e libera o GIL. É a mudança mais simples a partir do código original, mas o
+GIL serializa o processamento (Seção~\ref{sec:exp4}); para ganhar paralelismo de CPU, a
+evolução natural é o \texttt{multiprocessing}.
+
+\textbf{Refatoração 3: corrotinas com \texttt{asyncio} e fila de eventos.} Cada switch é
+atendido por uma corrotina leitora que, a cada \texttt{await reader.read()}, devolve o
+controle ao \textit{event loop}, e por um despachante; entre os dois, uma
+\texttt{asyncio.Queue} limitada a 64 lotes separa a E/S da lógica de controle. Essa fila
+permite acoplar aplicações (aprendizado de MAC, firewall) sem tocar no código de rede,
+aplica \textit{backpressure} (a leitura pausa se o processamento atrasar) e, por ser por
+switch, impede que um switch lento atrase os demais. É o modelo mais próximo do adotado
+pelo Ryu, que usa \textit{green threads} e filas de eventos entre os componentes
+\cite{ryu}. Seu custo por mensagem é o mais alto dos três; o \texttt{uvloop}, \textit{event loop}
+escrito em C, é o caminho natural para reduzi-lo.
+
+% ======================================================================
+\section{Conclusão e Trabalhos Futuros}
+\label{sec:conclusao}
+Os limites do \texttt{Controlador-v2.py} vêm de sua arquitetura de E/S. O handshake síncrono, aliado a
+\texttt{listen(5)}, faz a latência de conexão crescer até 4,3\,s com 16 switches e
+impede o cbench de conectar 8 switches. O \textit{polling} com espera ocupada e as
+várias syscalls por mensagem limitam o controlador a cerca de 30 mil PACKET\_IN/s sob
+inundação, com CPU acima de 97\% e perda de até 100\% dos pacotes, e a 108 mil
+respostas/s no melhor caso do cbench. Já o \texttt{struct.unpack()} responde por só cerca de 1\% do custo por mensagem.
+
+Esses gargalos são exatamente os que levaram frameworks como o Ryu a adotar modelos
+assíncronos orientados a eventos: um laço que só desperta quando há dados, handshakes
+tratados como eventos independentes, leitura e escrita em lote e filas que desacoplam a
+rede das aplicações. As refatorações confirmam a lição, com uma nuance: a refatoração
+com \texttt{selectors} melhorou todos os indicadores, enquanto threads e
+\texttt{asyncio} resolveram as conexões e a ociosidade, mas perderam vazão quando cada
+switch tem uma única mensagem pendente. A escolha do modelo de concorrência deve,
+portanto, considerar o custo por mensagem e o regime de carga, e não apenas a
+eliminação do bloqueio.
+
+Como trabalhos futuros: instalar regras com FLOW\_MOD (aprendizado de MAC), reduzindo
+os PACKET\_IN; usar \texttt{multiprocessing} para contornar o GIL; avaliar o
+\texttt{uvloop} e o Python sem GIL; e repetir as medições em máquina física.
+
+\bibliographystyle{sbc}
+\bibliography{referencias}
+
+\end{document}

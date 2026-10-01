@@ -1,0 +1,147 @@
+=== Controlador SDN Didático v2 (OpenFlow 1.0 / Hub) ===
+Iniciando servidor socket TCP em 0.0.0.0:6653...
+Aguardando conexões dos switches (porta 6653)...
+
+[17:36:50.155] [+] Conexão TCP estabelecida com o switch: 127.0.0.1:42145
+[17:36:50.155]     <<< HELLO de 127.0.0.1:42145 (xid=1)
+[17:36:50.155]     >>> FEATURES_REQUEST para 127.0.0.1:42145
+[17:36:50.155]     <<< FEATURES_REPLY: DPID=0000000000000001 buffers=256 tabelas=2 portas=4 (0.29 ms)
+[17:36:50.155] [OK] Handshake concluído com DPID 1 (1 switch(es) conectado(s))
+[17:36:50.155] [+] Conexão TCP estabelecida com o switch: 127.0.0.1:58169
+[17:36:50.155]     <<< HELLO de 127.0.0.1:58169 (xid=1)
+[17:36:50.155]     >>> FEATURES_REQUEST para 127.0.0.1:58169
+[17:36:50.155]     <<< FEATURES_REPLY: DPID=0000000000000002 buffers=256 tabelas=2 portas=4 (0.04 ms)
+[17:36:50.155] [OK] Handshake concluído com DPID 2 (2 switch(es) conectado(s))
+[17:36:50.156] [+] Conexão TCP estabelecida com o switch: 127.0.0.1:50811
+[17:36:50.156]     <<< HELLO de 127.0.0.1:50811 (xid=1)
+[17:36:50.156]     >>> FEATURES_REQUEST para 127.0.0.1:50811
+[17:36:50.156]     <<< FEATURES_REPLY: DPID=0000000000000003 buffers=256 tabelas=2 portas=4 (0.03 ms)
+[17:36:50.156] [OK] Handshake concluído com DPID 3 (3 switch(es) conectado(s))
+[17:36:50.156] [+] Conexão TCP estabelecida com o switch: 127.0.0.1:48109
+[17:36:50.156]     <<< HELLO de 127.0.0.1:48109 (xid=1)
+[17:36:50.156]     >>> FEATURES_REQUEST para 127.0.0.1:48109
+[17:36:50.156]     <<< FEATURES_REPLY: DPID=0000000000000004 buffers=256 tabelas=2 portas=4 (0.03 ms)
+[17:36:50.156] [OK] Handshake concluído com DPID 4 (4 switch(es) conectado(s))
+[17:36:50.156] [+] Conexão TCP estabelecida com o switch: 127.0.0.1:41535
+[17:36:50.156]     <<< HELLO de 127.0.0.1:41535 (xid=1)
+[17:36:50.156]     >>> FEATURES_REQUEST para 127.0.0.1:41535
+[17:36:50.156]     <<< FEATURES_REPLY: DPID=0000000000000005 buffers=256 tabelas=2 portas=4 (0.02 ms)
+[17:36:50.156] [OK] Handshake concluído com DPID 5 (5 switch(es) conectado(s))
+[17:36:50.156] [+] Conexão TCP estabelecida com o switch: 127.0.0.1:54143
+[17:36:50.156]     <<< HELLO de 127.0.0.1:54143 (xid=1)
+[17:36:50.156]     >>> FEATURES_REQUEST para 127.0.0.1:54143
+[17:36:50.156]     <<< FEATURES_REPLY: DPID=0000000000000006 buffers=256 tabelas=2 portas=4 (0.03 ms)
+[17:36:50.156] [OK] Handshake concluído com DPID 6 (6 switch(es) conectado(s))
+[17:36:50.156] [+] Conexão TCP estabelecida com o switch: 127.0.0.1:55105
+[17:36:50.156]     <<< HELLO de 127.0.0.1:55105 (xid=1)
+[17:36:50.156]     >>> FEATURES_REQUEST para 127.0.0.1:55105
+[17:36:50.156]     <<< FEATURES_REPLY: DPID=0000000000000007 buffers=256 tabelas=2 portas=4 (0.03 ms)
+[17:36:50.156] [OK] Handshake concluído com DPID 7 (7 switch(es) conectado(s))
+[17:36:51.120] [STATS] switches=7 packet_in/s=104417 msgs/s=104417
+[17:36:52.120] [STATS] switches=7 packet_in/s=112255 msgs/s=112255
+[17:36:53.120] [STATS] switches=7 packet_in/s=110692 msgs/s=110692
+[17:36:54.120] [STATS] switches=7 packet_in/s=106991 msgs/s=106991
+[17:36:55.120] [STATS] switches=7 packet_in/s=104593 msgs/s=104593
+[17:36:56.120] [STATS] switches=7 packet_in/s=102454 msgs/s=102454
+[17:36:57.120] [STATS] switches=7 packet_in/s=105471 msgs/s=105471
+[17:36:58.120] [STATS] switches=7 packet_in/s=106551 msgs/s=106551
+[17:36:59.120] [STATS] switches=7 packet_in/s=103715 msgs/s=103715
+[17:37:00.121] [STATS] switches=7 packet_in/s=103486 msgs/s=103486
+[17:37:01.121] [STATS] switches=7 packet_in/s=89761 msgs/s=89761
+[17:37:02.121] [STATS] switches=7 packet_in/s=102938 msgs/s=102938
+[17:37:03.121] [STATS] switches=7 packet_in/s=105642 msgs/s=105642
+[17:37:04.122] [STATS] switches=7 packet_in/s=105796 msgs/s=105796
+[17:37:05.122] [STATS] switches=7 packet_in/s=106319 msgs/s=106319
+[17:37:06.122] [STATS] switches=7 packet_in/s=105786 msgs/s=105786
+[17:37:07.122] [STATS] switches=7 packet_in/s=109070 msgs/s=109070
+[17:37:08.122] [STATS] switches=7 packet_in/s=105246 msgs/s=105246
+[17:37:09.122] [STATS] switches=7 packet_in/s=102582 msgs/s=102582
+[17:37:10.123] [STATS] switches=7 packet_in/s=105541 msgs/s=105541
+[17:37:11.123] [STATS] switches=7 packet_in/s=98886 msgs/s=98886
+[17:37:12.123] [STATS] switches=7 packet_in/s=105285 msgs/s=105285
+[17:37:13.123] [STATS] switches=7 packet_in/s=110173 msgs/s=110173
+[17:37:14.123] [STATS] switches=7 packet_in/s=111317 msgs/s=111317
+[17:37:15.123] [STATS] switches=7 packet_in/s=111794 msgs/s=111794
+[17:37:16.123] [STATS] switches=7 packet_in/s=107080 msgs/s=107080
+[17:37:17.123] [STATS] switches=7 packet_in/s=106713 msgs/s=106713
+[17:37:18.123] [STATS] switches=7 packet_in/s=105762 msgs/s=105762
+[17:37:19.123] [STATS] switches=7 packet_in/s=102516 msgs/s=102516
+[17:37:20.123] [STATS] switches=7 packet_in/s=102434 msgs/s=102434
+[17:37:21.124] [STATS] switches=7 packet_in/s=92713 msgs/s=92713
+[17:37:22.124] [STATS] switches=7 packet_in/s=101986 msgs/s=101986
+[17:37:23.124] [STATS] switches=7 packet_in/s=108233 msgs/s=108233
+[17:37:24.124] [STATS] switches=7 packet_in/s=109504 msgs/s=109504
+[17:37:25.124] [STATS] switches=7 packet_in/s=107193 msgs/s=107193
+[17:37:26.124] [STATS] switches=7 packet_in/s=106291 msgs/s=106291
+[17:37:27.124] [STATS] switches=7 packet_in/s=107158 msgs/s=107158
+[17:37:28.124] [STATS] switches=7 packet_in/s=107347 msgs/s=107347
+[17:37:29.124] [STATS] switches=7 packet_in/s=104594 msgs/s=104594
+[17:37:30.124] [STATS] switches=7 packet_in/s=109454 msgs/s=109454
+[17:37:31.124] [STATS] switches=7 packet_in/s=96765 msgs/s=96765
+[17:37:32.124] [STATS] switches=7 packet_in/s=106397 msgs/s=106397
+[17:37:33.124] [STATS] switches=7 packet_in/s=114098 msgs/s=114098
+[17:37:34.124] [STATS] switches=7 packet_in/s=110129 msgs/s=110129
+[17:37:35.124] [STATS] switches=7 packet_in/s=111998 msgs/s=111998
+[17:37:36.124] [STATS] switches=7 packet_in/s=109917 msgs/s=109917
+[17:37:37.124] [STATS] switches=7 packet_in/s=111778 msgs/s=111778
+[17:37:38.124] [STATS] switches=7 packet_in/s=108701 msgs/s=108701
+[17:37:39.124] [STATS] switches=7 packet_in/s=110000 msgs/s=110000
+[17:37:40.124] [STATS] switches=7 packet_in/s=116644 msgs/s=116644
+[17:37:41.124] [STATS] switches=7 packet_in/s=97660 msgs/s=97660
+[17:37:42.124] [STATS] switches=7 packet_in/s=105358 msgs/s=105358
+[17:37:43.124] [STATS] switches=7 packet_in/s=112252 msgs/s=112252
+[17:37:44.124] [STATS] switches=7 packet_in/s=113072 msgs/s=113072
+[17:37:45.124] [STATS] switches=7 packet_in/s=111569 msgs/s=111569
+[17:37:46.124] [STATS] switches=7 packet_in/s=113023 msgs/s=113023
+[17:37:47.124] [STATS] switches=7 packet_in/s=108215 msgs/s=108215
+[17:37:48.124] [STATS] switches=7 packet_in/s=112931 msgs/s=112931
+[17:37:49.124] [STATS] switches=7 packet_in/s=109637 msgs/s=109637
+[17:37:50.124] [STATS] switches=7 packet_in/s=109521 msgs/s=109521
+[17:37:51.124] [STATS] switches=7 packet_in/s=94031 msgs/s=94031
+[17:37:52.124] [STATS] switches=7 packet_in/s=107914 msgs/s=107914
+[17:37:53.124] [STATS] switches=7 packet_in/s=104333 msgs/s=104333
+[17:37:54.124] [STATS] switches=7 packet_in/s=103889 msgs/s=103889
+[17:37:55.125] [STATS] switches=7 packet_in/s=103376 msgs/s=103376
+[17:37:56.125] [STATS] switches=7 packet_in/s=106087 msgs/s=106087
+[17:37:57.125] [STATS] switches=7 packet_in/s=107603 msgs/s=107603
+[17:37:58.125] [STATS] switches=7 packet_in/s=104019 msgs/s=104019
+[17:37:59.126] [STATS] switches=7 packet_in/s=106913 msgs/s=106913
+[17:38:00.126] [STATS] switches=7 packet_in/s=111230 msgs/s=111230
+[17:38:01.126] [STATS] switches=7 packet_in/s=100401 msgs/s=100401
+[17:38:02.126] [STATS] switches=7 packet_in/s=114063 msgs/s=114063
+[17:38:03.126] [STATS] switches=7 packet_in/s=105610 msgs/s=105610
+[17:38:04.126] [STATS] switches=7 packet_in/s=112643 msgs/s=112643
+[17:38:05.126] [STATS] switches=7 packet_in/s=109992 msgs/s=109992
+[17:38:06.126] [STATS] switches=7 packet_in/s=105373 msgs/s=105373
+[17:38:07.126] [STATS] switches=7 packet_in/s=114433 msgs/s=114433
+[17:38:08.126] [STATS] switches=7 packet_in/s=108648 msgs/s=108648
+[17:38:09.126] [STATS] switches=7 packet_in/s=108584 msgs/s=108584
+[17:38:10.126] [STATS] switches=7 packet_in/s=113151 msgs/s=113151
+[17:38:11.126] [STATS] switches=7 packet_in/s=99346 msgs/s=99346
+[17:38:12.126] [STATS] switches=7 packet_in/s=112020 msgs/s=112020
+[17:38:13.126] [STATS] switches=7 packet_in/s=114982 msgs/s=114982
+[17:38:14.126] [STATS] switches=7 packet_in/s=109281 msgs/s=109281
+[17:38:15.126] [STATS] switches=7 packet_in/s=114612 msgs/s=114612
+[17:38:16.126] [STATS] switches=7 packet_in/s=112233 msgs/s=112233
+[17:38:17.126] [STATS] switches=7 packet_in/s=109585 msgs/s=109585
+[17:38:18.126] [STATS] switches=7 packet_in/s=110419 msgs/s=110419
+[17:38:19.126] [STATS] switches=7 packet_in/s=110461 msgs/s=110461
+[17:38:20.127] [STATS] switches=7 packet_in/s=110820 msgs/s=110820
+[17:38:21.127] [STATS] switches=7 packet_in/s=98038 msgs/s=98038
+[17:38:22.127] [STATS] switches=7 packet_in/s=102778 msgs/s=102778
+[17:38:23.127] [STATS] switches=7 packet_in/s=105441 msgs/s=105441
+[17:38:24.127] [STATS] switches=7 packet_in/s=104861 msgs/s=104861
+[17:38:25.127] [STATS] switches=7 packet_in/s=105540 msgs/s=105540
+[17:38:26.127] [STATS] switches=7 packet_in/s=109377 msgs/s=109377
+[17:38:27.127] [STATS] switches=7 packet_in/s=108907 msgs/s=108907
+[17:38:28.127] [STATS] switches=7 packet_in/s=107741 msgs/s=107741
+[17:38:29.127] [STATS] switches=7 packet_in/s=106382 msgs/s=106382
+[17:38:30.127] [STATS] switches=7 packet_in/s=105817 msgs/s=105817
+[17:38:31.128] [STATS] switches=7 packet_in/s=100164 msgs/s=100164
+[17:38:31.158] [-] Switch DPID 1 desconectado: Conexão encerrada pelo switch.
+[17:38:31.158] [-] Switch DPID 2 desconectado: Conexão encerrada pelo switch.
+[17:38:31.158] [-] Switch DPID 3 desconectado: Conexão encerrada pelo switch.
+[17:38:31.158] [-] Switch DPID 4 desconectado: Conexão encerrada pelo switch.
+[17:38:31.158] [-] Switch DPID 5 desconectado: Conexão encerrada pelo switch.
+[17:38:31.158] [-] Switch DPID 6 desconectado: Conexão encerrada pelo switch.
+[17:38:31.158] [-] Switch DPID 7 desconectado: Conexão encerrada pelo switch.

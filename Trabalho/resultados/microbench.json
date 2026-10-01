@@ -1,0 +1,10 @@
+{
+ "struct.unpack(!BBHI) string de formato": 127.23416500193706,
+ "Struct pré-compilada .unpack_from": 140.98972500050877,
+ "struct.unpack(!IHHBx) corpo PACKET_IN": 184.5586449962866,
+ "struct.pack PACKET_OUT (3 chamadas + concat)": 689.3640600037543,
+ "formatação + print do log por PACKET_IN": 945.3122249988155,
+ "send + 2x recv (enquadramento do v2)": 3360.473299999285,
+ "send + 1x recv de 64 msgs (por mensagem)": 63.01025781212389,
+ "recv() sem dados -> BlockingIOError (1 volta do busy-wait)": 1841.6676149990963
+}

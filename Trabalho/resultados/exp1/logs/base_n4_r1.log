@@ -1,0 +1,30 @@
+=== Controlador SDN Didático v2 (OpenFlow 1.0 / Hub) ===
+Iniciando servidor socket TCP em 0.0.0.0:6653...
+Aguardando conexões dos switches (porta 6653)...
+
+[18:09:33.884] [+] Conexão TCP estabelecida com o switch: 127.0.0.1:43110
+[18:09:33.884]     <<< HELLO de 127.0.0.1:43110 (xid=61)
+[18:09:33.884]     >>> FEATURES_REQUEST para 127.0.0.1:43110
+[18:09:33.884]     <<< FEATURES_REPLY: DPID=0000000000000004 buffers=0 tabelas=254 portas=3 (0.24 ms)
+[18:09:33.885] [OK] Handshake concluído com DPID 4 (1 switch(es) conectado(s))
+[18:09:33.885] [+] Conexão TCP estabelecida com o switch: 127.0.0.1:43120
+[18:09:33.885]     <<< HELLO de 127.0.0.1:43120 (xid=62)
+[18:09:33.885]     >>> FEATURES_REQUEST para 127.0.0.1:43120
+[18:09:33.950]     <<< FEATURES_REPLY: DPID=0000000000000001 buffers=0 tabelas=254 portas=3 (65.00 ms)
+[18:09:33.950] [OK] Handshake concluído com DPID 1 (2 switch(es) conectado(s))
+[18:09:33.950] [+] Conexão TCP estabelecida com o switch: 127.0.0.1:43134
+[18:09:33.950]     <<< HELLO de 127.0.0.1:43134 (xid=63)
+[18:09:33.950]     >>> FEATURES_REQUEST para 127.0.0.1:43134
+[18:09:33.950]     <<< FEATURES_REPLY: DPID=0000000000000003 buffers=0 tabelas=254 portas=4 (0.18 ms)
+[18:09:33.950] [OK] Handshake concluído com DPID 3 (3 switch(es) conectado(s))
+[18:09:33.950] [+] Conexão TCP estabelecida com o switch: 127.0.0.1:43140
+[18:09:33.950]     <<< HELLO de 127.0.0.1:43140 (xid=64)
+[18:09:33.950]     >>> FEATURES_REQUEST para 127.0.0.1:43140
+[18:09:33.950]     <<< FEATURES_REPLY: DPID=0000000000000002 buffers=0 tabelas=254 portas=4 (0.14 ms)
+[18:09:33.950] [OK] Handshake concluído com DPID 2 (4 switch(es) conectado(s))
+[18:09:34.804] [STATS] switches=4 packet_in/s=51 msgs/s=51
+[18:09:35.805] [STATS] switches=4 packet_in/s=63 msgs/s=63
+[18:09:35.994] [-] Switch DPID 4 desconectado: Conexão encerrada pelo switch.
+[18:09:35.994] [-] Switch DPID 1 desconectado: Conexão encerrada pelo switch.
+[18:09:35.994] [-] Switch DPID 3 desconectado: Conexão encerrada pelo switch.
+[18:09:35.994] [-] Switch DPID 2 desconectado: Conexão encerrada pelo switch.

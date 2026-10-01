@@ -1,0 +1,30 @@
+# Coletado em 2026-10-01 17:07:31 -0300
+
+## Sistema
+Linux 6.18.33.2-microsoft-standard-WSL2 x86_64 GNU/Linux
+PRETTY_NAME="Ubuntu 26.04 LTS"
+Ambiente: WSL2 (Linux version 6.18.33.2-microsoft-standard-WSL2 (root@f1bbfb02316b) (gcc (GCC) 13.2.0, GNU ld (GNU Binutils) 2.41) #1 SMP PREEMPT_DYNAMIC Thu Jun 18 21:54:43 UTC 2026)
+
+## CPU e memória
+CPU(s):                                  16
+Model name:                              12th Gen Intel(R) Core(TM) i5-12500H
+Thread(s) per core:                      2
+Core(s) per socket:                      8
+               total        used        free      shared  buff/cache   available
+Mem:           7.6Gi       1.7Gi       4.2Gi        22Mi       1.8Gi       5.9Gi
+
+## Software
+Python: Python 3.14.4
+GIL habilitado: True
+Mininet: 2.3.0
+ovs-vsctl (Open vSwitch) 3.7.1
+ovs-vswitchd (Open vSwitch) 3.7.1
+cbench: /usr/local/bin/cbench
+tcpdump: tcpdump version 4.99.6
+top: top from procps-ng 4.0.4
+matplotlib: 3.10.7+dfsg1
+uvloop: não instalado (asyncio usa o loop padrão)
+
+## Parâmetros de rede do kernel
+net.core.somaxconn = 4096
+net.ipv4.tcp_max_syn_backlog = 512
