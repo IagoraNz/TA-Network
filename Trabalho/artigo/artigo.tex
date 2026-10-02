@@ -35,6 +35,9 @@
 
 \maketitle
 
+% Rodapé da primeira página com o link da apresentação em vídeo.
+{\renewcommand{\thefootnote}{}\footnotetext{Link da apresentação em vídeo: \url{https://youtu.be/BJntBFMrrRU}}}
+
 \begin{abstract}
 We stress a minimalist single-threaded OpenFlow~1.0 controller written in Python over
 TCP sockets, with polling and a synchronous handshake, using Mininet
@@ -44,7 +47,7 @@ latency to 4.3\,s with 16 switches; under PACKET\_IN flooding it saturates at ab
 108 thousand responses/s and fails with eight switches. Of three concurrent
 refactorings, all remove the connection bottleneck, but only \texttt{selectors}-based
 I/O multiplexing also improves latency-mode throughput, which explains why frameworks
-such as Ryu are asynchronous and event-driven. Video: \todo{public link}.
+such as Ryu are asynchronous and event-driven.
 \end{abstract}
 
 \begin{resumo}
@@ -56,7 +59,7 @@ cerca de 30 mil mensagens/s, com CPU acima de 97\% e perda de até 100\%; no cbe
 atinge 108 mil respostas/s e falha com oito switches. Das três refatorações concorrentes,
 todas eliminam o gargalo de conexão, mas só a multiplexação de E/S com \texttt{selectors}
 também melhora a vazão no modo latência, o que explica por que frameworks como o Ryu são
-assíncronos e orientados a eventos. Vídeo: \todo{link público}.
+assíncronos e orientados a eventos.
 \end{resumo}
 
 % ======================================================================
